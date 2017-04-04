@@ -13,15 +13,30 @@ input {
     border: none;
 }
 
+input[type=text],
+input[type=email],
+input[type=password] {
+    width: 100%;
+}
+
 a {
     color: $accent;
+    &:hover,
+    &:active,
+    &:focus {
+        color: #359FC5;
+        text-decoration: none;
+    }
 }
-section{
+
+section {
     padding: 100px 0;
 }
-.text-large{
+
+.text-large {
     font-size: 1.2em;
 }
+
 .btn {
     text-transform: uppercase;
     font-weight: bold;
@@ -66,17 +81,12 @@ section{
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dd7bc', endColorstr='#6bbad7', GradientType=1);
         padding: 15px 15px;
         color: #fff;
-        a{
+        a {
             color: #fff;
         }
     }
-    .card-body {
-        padding: 15px 15%;
-        input[type=text],
-        input[type=email],
-        input[type=password] {
-            width: 100%;
-        }
+    .card-content{
+        padding: 10px;
     }
 }
 

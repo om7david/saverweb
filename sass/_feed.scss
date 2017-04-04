@@ -1,8 +1,51 @@
-.profile{
-    text-align: center;
-    .profile-img{
-        width: 100px;
-        height: 100px;
-        display: block;
+    .feed {
+        margin: 65px 0 25px;
+        .profile {
+            text-align: center;
+            .profile-img {
+                width: 100px;
+                height: 100px;
+                margin: 0 auto;
+                display: block;
+                border-radius: 50%;
+                background: #fff url(../img/user.png);
+            }
+        }
+        .sidebar-left {
+            .card-footer {
+                padding: 10px;
+                border-top: 1px solid $light;
+                a {
+                    color: $midgray;
+                    font-size: 12px;
+                    &:after {
+                        content: '•';
+                        color: $midgray;
+                        margin: 0 5px 0 8px;
+                    }
+                    &:last-child::after {
+                        content: '';
+                    }
+                }
+            }
+            .followers {
+                text-align: center;
+                border-bottom: 1px solid $light;
+                font-size: 16px;
+                a {
+                    display: inline-block;
+                    border-right: 1px solid $light;
+                    padding: 10px;
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+        }
+        .posts {
+            .profile {
+                text-align: left;
+                margin: 0 0;
+            }
+        }
     }
-}

@@ -1,5 +1,8 @@
 .navbar {
     @include bg-primary;
+    position: fixed;
+    top: 0;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
     border: none;
     margin-bottom: 0;
     width: 100%;
@@ -19,10 +22,7 @@
     .navbar-form {
         border: none;
     }
-    &.login {
-        position: fixed;
-    }
-    .form-group {
+    .navbar-search .form-group {
         width: 100%;
         input[type=search] {
             width: 100% ;
@@ -30,10 +30,12 @@
             background-size: 20px;
             color: #fff;
             padding: 5px 32px 5px 10px;
-            border: 0;
-            
+            border: 0;            
             @include placeholder{color: rgba(255, 255, 255, .3)};
         }
+    }
+    &.static{
+        position: static;
     }
 }
 
@@ -54,7 +56,7 @@
         margin-left: 10px;
         vertical-align: middle;
     }
-    .profile-img {
+    .profile-img-sm {
         display: block;
         width: 30px;
         height: 30px;
@@ -73,6 +75,24 @@
             font-size: 16px;
             margin-right: 14px;
         }
+    }
+}
+.vertical-nav {
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+            a {
+                padding: 10px;
+                display: block;
+                font-size: 16px;
+            }
+        }
+    }
+    .material-icons {
+        transform: translateY(5px);
+        margin-right: 10px;
     }
 }
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 3, ../sass/saver.scss */
 body,
 html {
@@ -14,65 +15,77 @@ input {
 }
 
 /* line 16, ../sass/saver.scss */
+input[type=text],
+input[type=email],
+input[type=password] {
+  width: 100%;
+}
+
+/* line 22, ../sass/saver.scss */
 a {
   color: #6BB8D7;
 }
+/* line 24, ../sass/saver.scss */
+a:hover, a:active, a:focus {
+  color: #359FC5;
+  text-decoration: none;
+}
 
-/* line 19, ../sass/saver.scss */
+/* line 32, ../sass/saver.scss */
 section {
   padding: 100px 0;
 }
 
-/* line 22, ../sass/saver.scss */
+/* line 36, ../sass/saver.scss */
 .text-large {
   font-size: 1.2em;
 }
 
-/* line 25, ../sass/saver.scss */
+/* line 40, ../sass/saver.scss */
 .btn {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 30, ../sass/saver.scss */
+/* line 45, ../sass/saver.scss */
 .btn-primary {
   background-color: #6BB8D7;
   color: #fff;
   border-color: #6BB8D7;
 }
-/* line 34, ../sass/saver.scss */
+/* line 49, ../sass/saver.scss */
 .btn-primary:hover {
   background: #43a5cc;
   color: #fff;
   border-color: #43a5cc;
 }
 
-/* line 41, ../sass/saver.scss */
+/* line 56, ../sass/saver.scss */
 .btn-secondary {
   background-color: #fff;
   opacity: .8;
   color: #6BB8D7;
   border-color: #fff;
 }
-/* line 46, ../sass/saver.scss */
+/* line 61, ../sass/saver.scss */
 .btn-secondary:hover {
   color: #6BB8D7;
   opacity: 1;
 }
 
-/* line 52, ../sass/saver.scss */
+/* line 67, ../sass/saver.scss */
 .bg-light {
   background: #F8F8F8;
 }
 
-/* line 56, ../sass/saver.scss */
+/* line 71, ../sass/saver.scss */
 .card {
   background: #fff;
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
-/* line 61, ../sass/saver.scss */
+/* line 76, ../sass/saver.scss */
 .card .card-header {
   background: #0dd7bc;
   background: -moz-linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
@@ -82,22 +95,16 @@ section {
   padding: 15px 15px;
   color: #fff;
 }
-/* line 69, ../sass/saver.scss */
+/* line 84, ../sass/saver.scss */
 .card .card-header a {
   color: #fff;
 }
-/* line 73, ../sass/saver.scss */
-.card .card-body {
-  padding: 15px 15%;
-}
-/* line 75, ../sass/saver.scss */
-.card .card-body input[type=text],
-.card .card-body input[type=email],
-.card .card-body input[type=password] {
-  width: 100%;
+/* line 88, ../sass/saver.scss */
+.card .card-content {
+  padding: 10px;
 }
 
-/* line 83, ../sass/saver.scss */
+/* line 93, ../sass/saver.scss */
 .header {
   height: 100%;
   width: 100%;
@@ -105,45 +112,45 @@ section {
   vertical-align: middle;
   position: relative;
 }
-/* line 89, ../sass/saver.scss */
+/* line 99, ../sass/saver.scss */
 .header.home {
   background: url(../img/back-register.jpg) no-repeat center;
   background-size: cover;
 }
-/* line 93, ../sass/saver.scss */
+/* line 103, ../sass/saver.scss */
 .header input {
   margin-bottom: 15px;
 }
 
-/* line 98, ../sass/saver.scss */
+/* line 108, ../sass/saver.scss */
 .header .card {
   margin-top: 100px;
   margin-bottom: 75px;
 }
 
-/* line 103, ../sass/saver.scss */
+/* line 113, ../sass/saver.scss */
 .text-tiny {
   font-size: 0.8em;
 }
 
-/* line 107, ../sass/saver.scss */
+/* line 117, ../sass/saver.scss */
 .form.horizontal {
   display: flex;
 }
-/* line 109, ../sass/saver.scss */
+/* line 119, ../sass/saver.scss */
 .form.horizontal .form-input {
   margin-left: 10px;
 }
-/* line 112, ../sass/saver.scss */
+/* line 122, ../sass/saver.scss */
 .form.horizontal input {
   display: block;
 }
-/* line 115, ../sass/saver.scss */
+/* line 125, ../sass/saver.scss */
 .form.horizontal input[type=submit] {
   display: inline-block;
 }
 
-/* line 120, ../sass/saver.scss */
+/* line 130, ../sass/saver.scss */
 footer {
   background: #333;
   text-align: center;
@@ -151,7 +158,7 @@ footer {
   width: 100%;
   color: #fff;
 }
-/* line 126, ../sass/saver.scss */
+/* line 136, ../sass/saver.scss */
 footer a {
   display: inline-block;
   padding: 5px 15px;
@@ -159,24 +166,24 @@ footer a {
   opacity: .8;
   font-size: .8em;
 }
-/* line 132, ../sass/saver.scss */
+/* line 142, ../sass/saver.scss */
 footer a:hover {
   opacity: 1;
 }
 
-/* line 138, ../sass/saver.scss */
+/* line 148, ../sass/saver.scss */
 .footer-home {
   position: absolute;
   bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 144, ../sass/saver.scss */
+  /* line 154, ../sass/saver.scss */
   .header {
     display: block;
     height: auto;
   }
-  /* line 147, ../sass/saver.scss */
+  /* line 157, ../sass/saver.scss */
   .header .card {
     margin-top: 15px;
   }
@@ -188,41 +195,40 @@ footer a:hover {
   background: -webkit-linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
   background: linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dd7bc', endColorstr='#6bbad7', GradientType=1);
+  position: fixed;
+  top: 0;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   border: none;
   margin-bottom: 0;
   width: 100%;
   z-index: 2;
 }
-/* line 7, ../sass/_nav.scss */
+/* line 10, ../sass/_nav.scss */
 .navbar a {
   color: #fff;
 }
-/* line 10, ../sass/_nav.scss */
+/* line 13, ../sass/_nav.scss */
 .navbar .logo {
   padding: 10px 0;
 }
-/* line 12, ../sass/_nav.scss */
+/* line 15, ../sass/_nav.scss */
 .navbar .logo img {
   max-width: 150px;
 }
-/* line 16, ../sass/_nav.scss */
+/* line 19, ../sass/_nav.scss */
 .navbar .form-group {
   vertical-align: top;
 }
-/* line 19, ../sass/_nav.scss */
+/* line 22, ../sass/_nav.scss */
 .navbar .navbar-form {
   border: none;
 }
-/* line 22, ../sass/_nav.scss */
-.navbar.login {
-  position: fixed;
-}
 /* line 25, ../sass/_nav.scss */
-.navbar .form-group {
+.navbar .navbar-search .form-group {
   width: 100%;
 }
 /* line 27, ../sass/_nav.scss */
-.navbar .form-group input[type=search] {
+.navbar .navbar-search .form-group input[type=search] {
   width: 100%;
   background: rgba(33, 99, 123, 0.2) url(../img/search.png) no-repeat 99% center;
   background-size: 20px;
@@ -231,47 +237,51 @@ footer a:hover {
   border: 0;
 }
 /* line 10, ../sass/_mixins.scss */
-.navbar .form-group input[type=search]::-webkit-input-placeholder {
+.navbar .navbar-search .form-group input[type=search]::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 /* line 10, ../sass/_mixins.scss */
-.navbar .form-group input[type=search]:-moz-placeholder {
+.navbar .navbar-search .form-group input[type=search]:-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 /* line 10, ../sass/_mixins.scss */
-.navbar .form-group input[type=search]::-moz-placeholder {
+.navbar .navbar-search .form-group input[type=search]::-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 /* line 10, ../sass/_mixins.scss */
-.navbar .form-group input[type=search]:-ms-input-placeholder {
+.navbar .navbar-search .form-group input[type=search]:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
+}
+/* line 37, ../sass/_nav.scss */
+.navbar.static {
+  position: static;
 }
 
-/* line 40, ../sass/_nav.scss */
+/* line 42, ../sass/_nav.scss */
 .navbar-user {
   text-align: right;
 }
-/* line 42, ../sass/_nav.scss */
+/* line 44, ../sass/_nav.scss */
 .navbar-user div {
   display: inline-block;
 }
-/* line 45, ../sass/_nav.scss */
+/* line 47, ../sass/_nav.scss */
 .navbar-user .btn-link {
   color: #fff;
   opacity: .8;
   font-weight: 300;
 }
-/* line 49, ../sass/_nav.scss */
+/* line 51, ../sass/_nav.scss */
 .navbar-user .btn-link:hover {
   opacity: 1;
 }
-/* line 53, ../sass/_nav.scss */
+/* line 55, ../sass/_nav.scss */
 .navbar-user .profile {
   margin-left: 10px;
   vertical-align: middle;
 }
-/* line 57, ../sass/_nav.scss */
-.navbar-user .profile-img {
+/* line 59, ../sass/_nav.scss */
+.navbar-user .profile-img-sm {
   display: block;
   width: 30px;
   height: 30px;
@@ -279,29 +289,47 @@ footer a:hover {
   background: #fff url(../img/user.png) no-repeat center;
   background-size: contain;
 }
-/* line 65, ../sass/_nav.scss */
+/* line 67, ../sass/_nav.scss */
 .navbar-user .material-icons {
   padding: 5px 0;
 }
-/* line 69, ../sass/_nav.scss */
+/* line 71, ../sass/_nav.scss */
 .navbar-user .dropdown .dropdown-menu {
   border: none;
 }
-/* line 72, ../sass/_nav.scss */
+/* line 74, ../sass/_nav.scss */
 .navbar-user .dropdown .material-icons {
   font-size: 16px;
   margin-right: 14px;
 }
 
+/* line 81, ../sass/_nav.scss */
+.vertical-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 86, ../sass/_nav.scss */
+.vertical-nav ul li a {
+  padding: 10px;
+  display: block;
+  font-size: 16px;
+}
+/* line 93, ../sass/_nav.scss */
+.vertical-nav .material-icons {
+  transform: translateY(5px);
+  margin-right: 10px;
+}
+
 @media only screen and (max-width: 768px) {
-  /* line 80, ../sass/_nav.scss */
+  /* line 100, ../sass/_nav.scss */
   .navbar .btn-secondary {
     position: absolute;
     right: 15px;
     bottom: 5px;
   }
 
-  /* line 85, ../sass/_nav.scss */
+  /* line 105, ../sass/_nav.scss */
   .navbar.login {
     position: static;
   }
@@ -338,12 +366,60 @@ footer a:hover {
 }
 
 /* line 1, ../sass/_feed.scss */
-.profile {
-  text-align: center;
+.feed {
+  margin: 65px 0 25px;
 }
 /* line 3, ../sass/_feed.scss */
-.profile .profile-img {
+.feed .profile {
+  text-align: center;
+}
+/* line 5, ../sass/_feed.scss */
+.feed .profile .profile-img {
   width: 100px;
   height: 100px;
+  margin: 0 auto;
   display: block;
+  border-radius: 50%;
+  background: #fff url(../img/user.png);
+}
+/* line 15, ../sass/_feed.scss */
+.feed .sidebar-left .card-footer {
+  padding: 10px;
+  border-top: 1px solid #F8F8F8;
+}
+/* line 18, ../sass/_feed.scss */
+.feed .sidebar-left .card-footer a {
+  color: #c6c6c6;
+  font-size: 12px;
+}
+/* line 21, ../sass/_feed.scss */
+.feed .sidebar-left .card-footer a:after {
+  content: '•';
+  color: #c6c6c6;
+  margin: 0 5px 0 8px;
+}
+/* line 26, ../sass/_feed.scss */
+.feed .sidebar-left .card-footer a:last-child::after {
+  content: '';
+}
+/* line 31, ../sass/_feed.scss */
+.feed .sidebar-left .followers {
+  text-align: center;
+  border-bottom: 1px solid #F8F8F8;
+  font-size: 16px;
+}
+/* line 35, ../sass/_feed.scss */
+.feed .sidebar-left .followers a {
+  display: inline-block;
+  border-right: 1px solid #F8F8F8;
+  padding: 10px;
+}
+/* line 39, ../sass/_feed.scss */
+.feed .sidebar-left .followers a:last-child {
+  border: none;
+}
+/* line 46, ../sass/_feed.scss */
+.feed .posts .profile {
+  text-align: left;
+  margin: 0 0;
 }

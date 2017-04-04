@@ -18,7 +18,7 @@
 
 <body>
     <nav class="navbar navbar-inverse">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-2">
                     <div class="logo">
@@ -39,8 +39,7 @@
                             <a href="#" class="btn btn-link"><i class="material-icons">chat_bubble</i></a>
                         </div>
                         <div class="profile">
-                            <a href="#" class="profile-img btn btn-link"></a>
-
+                            <a href="#" class="profile-img-sm btn btn-link"></a>
                         </div>
                         <div class="dropdown">
                             <button class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown">Jhon Doe <span class="caret"></span></button>
@@ -55,21 +54,55 @@
         </div>
     </nav>
     <div class="feed">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-sm-3">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="profile text-center">
-                                <a href="#">
-                                    <div class="profile-img">
-
+                    <div class="sidebar-left">
+                        <div class="card">
+                            <div class="card-header">
+                                <div class="profile text-center">
+                                    <a href="#">
+                                        <div class="profile-img">
+                                        </div>
+                                        <div class="profile-description">
+                                            <h3>Juan Cevallos</h3>
+                                            <h4>Plomero</h4>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="followers">
+                                    <a href="#">Seguidores: <b>1902</b></a>
+                                    <a href="#">Siguiendo: <b>3456</b></a>
+                                </div>
+                                <div class="vertical-nav" role="group" >
+                                    <ul>
+                                        <li><a href="#"><i class="material-icons">perm_contact_calendar</i> Contactos</a></li>
+                                        <li><a href="#"><i class="material-icons">label</i> Ofertas</a></li>
+                                    </ul>
+                                    
+                                    <div class="card-footer">
+                                        <a href="#">Terminos y Condiciones</a>
+                                        <a href="#">Acerca de Saver</a>
                                     </div>
-                                    <div class="profile-description">
-                                        <h3>Juan Cevallos</h3>
-                                        <h4>Plomero</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="posts">
+                        <div class="card post">
+                            <div class="card-content">
+                                <div class="post-header">
+                                    <div class="profile">
+                                        <div class="profile-img">
+                                            
+                                        </div>
                                     </div>
-                                </a>
+                                    
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -77,17 +110,6 @@
             </div>
         </div>
     </div>
-
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <a href="#">Terminos y Condiciones</a> |
-                    <a href="#">Acerca de Saver</a>
-                </div>
-            </div>
-        </div>
-    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
