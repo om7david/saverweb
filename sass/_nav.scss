@@ -1,0 +1,88 @@
+.navbar {
+    @include bg-primary;
+    border: none;
+    margin-bottom: 0;
+    width: 100%;
+    z-index: 2;
+    a {
+        color: #fff;
+    }
+    .logo {
+        padding: 10px 0;
+        img {
+            max-width: 150px;
+        }
+    }
+    .form-group {
+        vertical-align: top;
+    }
+    .navbar-form {
+        border: none;
+    }
+    &.login {
+        position: fixed;
+    }
+    .form-group {
+        width: 100%;
+        input[type=search] {
+            width: 100% ;
+            background: rgba(33, 99, 123, .2) url(../img/search.png) no-repeat 99% center;
+            background-size: 20px;
+            color: #fff;
+            padding: 5px 32px 5px 10px;
+            border: 0;
+            
+            @include placeholder{color: rgba(255, 255, 255, .3)};
+        }
+    }
+}
+
+.navbar-user {
+    text-align: right;
+    div {
+        display: inline-block;
+    }
+    .btn-link {
+        color: #fff;
+        opacity: .8;
+        font-weight: 300;
+        &:hover {
+            opacity: 1;
+        }
+    }
+    .profile {
+        margin-left: 10px;
+        vertical-align: middle;
+    }
+    .profile-img {
+        display: block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #fff url(../img/user.png) no-repeat center;
+        background-size: contain;
+    }
+    .material-icons{
+        padding: 5px 0;
+    }
+    .dropdown{
+        .dropdown-menu{
+            border: none;
+        }
+        .material-icons{
+            font-size: 16px;
+            margin-right: 14px;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar .btn-secondary {
+        position: absolute;
+        right: 15px;
+        bottom: 5px;
+    }
+    .navbar.login {
+        position: static;
+    }
+}

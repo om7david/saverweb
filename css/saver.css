@@ -1,0 +1,349 @@
+/* line 3, ../sass/saver.scss */
+body,
+html {
+  height: 100%;
+  font-family: 'Fira Sans';
+  color: #5d5c5c;
+}
+
+/* line 10, ../sass/saver.scss */
+input {
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+}
+
+/* line 16, ../sass/saver.scss */
+a {
+  color: #6BB8D7;
+}
+
+/* line 19, ../sass/saver.scss */
+section {
+  padding: 100px 0;
+}
+
+/* line 22, ../sass/saver.scss */
+.text-large {
+  font-size: 1.2em;
+}
+
+/* line 25, ../sass/saver.scss */
+.btn {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* line 30, ../sass/saver.scss */
+.btn-primary {
+  background-color: #6BB8D7;
+  color: #fff;
+  border-color: #6BB8D7;
+}
+/* line 34, ../sass/saver.scss */
+.btn-primary:hover {
+  background: #43a5cc;
+  color: #fff;
+  border-color: #43a5cc;
+}
+
+/* line 41, ../sass/saver.scss */
+.btn-secondary {
+  background-color: #fff;
+  opacity: .8;
+  color: #6BB8D7;
+  border-color: #fff;
+}
+/* line 46, ../sass/saver.scss */
+.btn-secondary:hover {
+  color: #6BB8D7;
+  opacity: 1;
+}
+
+/* line 52, ../sass/saver.scss */
+.bg-light {
+  background: #F8F8F8;
+}
+
+/* line 56, ../sass/saver.scss */
+.card {
+  background: #fff;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+/* line 61, ../sass/saver.scss */
+.card .card-header {
+  background: #0dd7bc;
+  background: -moz-linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
+  background: -webkit-linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
+  background: linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dd7bc', endColorstr='#6bbad7', GradientType=1);
+  padding: 15px 15px;
+  color: #fff;
+}
+/* line 69, ../sass/saver.scss */
+.card .card-header a {
+  color: #fff;
+}
+/* line 73, ../sass/saver.scss */
+.card .card-body {
+  padding: 15px 15%;
+}
+/* line 75, ../sass/saver.scss */
+.card .card-body input[type=text],
+.card .card-body input[type=email],
+.card .card-body input[type=password] {
+  width: 100%;
+}
+
+/* line 83, ../sass/saver.scss */
+.header {
+  height: 100%;
+  width: 100%;
+  display: table;
+  vertical-align: middle;
+  position: relative;
+}
+/* line 89, ../sass/saver.scss */
+.header.home {
+  background: url(../img/back-register.jpg) no-repeat center;
+  background-size: cover;
+}
+/* line 93, ../sass/saver.scss */
+.header input {
+  margin-bottom: 15px;
+}
+
+/* line 98, ../sass/saver.scss */
+.header .card {
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+
+/* line 103, ../sass/saver.scss */
+.text-tiny {
+  font-size: 0.8em;
+}
+
+/* line 107, ../sass/saver.scss */
+.form.horizontal {
+  display: flex;
+}
+/* line 109, ../sass/saver.scss */
+.form.horizontal .form-input {
+  margin-left: 10px;
+}
+/* line 112, ../sass/saver.scss */
+.form.horizontal input {
+  display: block;
+}
+/* line 115, ../sass/saver.scss */
+.form.horizontal input[type=submit] {
+  display: inline-block;
+}
+
+/* line 120, ../sass/saver.scss */
+footer {
+  background: #333;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+}
+/* line 126, ../sass/saver.scss */
+footer a {
+  display: inline-block;
+  padding: 5px 15px;
+  color: #fff;
+  opacity: .8;
+  font-size: .8em;
+}
+/* line 132, ../sass/saver.scss */
+footer a:hover {
+  opacity: 1;
+}
+
+/* line 138, ../sass/saver.scss */
+.footer-home {
+  position: absolute;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 144, ../sass/saver.scss */
+  .header {
+    display: block;
+    height: auto;
+  }
+  /* line 147, ../sass/saver.scss */
+  .header .card {
+    margin-top: 15px;
+  }
+}
+/* line 1, ../sass/_nav.scss */
+.navbar {
+  background: #0dd7bc;
+  background: -moz-linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
+  background: -webkit-linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
+  background: linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dd7bc', endColorstr='#6bbad7', GradientType=1);
+  border: none;
+  margin-bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
+/* line 7, ../sass/_nav.scss */
+.navbar a {
+  color: #fff;
+}
+/* line 10, ../sass/_nav.scss */
+.navbar .logo {
+  padding: 10px 0;
+}
+/* line 12, ../sass/_nav.scss */
+.navbar .logo img {
+  max-width: 150px;
+}
+/* line 16, ../sass/_nav.scss */
+.navbar .form-group {
+  vertical-align: top;
+}
+/* line 19, ../sass/_nav.scss */
+.navbar .navbar-form {
+  border: none;
+}
+/* line 22, ../sass/_nav.scss */
+.navbar.login {
+  position: fixed;
+}
+/* line 25, ../sass/_nav.scss */
+.navbar .form-group {
+  width: 100%;
+}
+/* line 27, ../sass/_nav.scss */
+.navbar .form-group input[type=search] {
+  width: 100%;
+  background: rgba(33, 99, 123, 0.2) url(../img/search.png) no-repeat 99% center;
+  background-size: 20px;
+  color: #fff;
+  padding: 5px 32px 5px 10px;
+  border: 0;
+}
+/* line 10, ../sass/_mixins.scss */
+.navbar .form-group input[type=search]::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+/* line 10, ../sass/_mixins.scss */
+.navbar .form-group input[type=search]:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+/* line 10, ../sass/_mixins.scss */
+.navbar .form-group input[type=search]::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+/* line 10, ../sass/_mixins.scss */
+.navbar .form-group input[type=search]:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* line 40, ../sass/_nav.scss */
+.navbar-user {
+  text-align: right;
+}
+/* line 42, ../sass/_nav.scss */
+.navbar-user div {
+  display: inline-block;
+}
+/* line 45, ../sass/_nav.scss */
+.navbar-user .btn-link {
+  color: #fff;
+  opacity: .8;
+  font-weight: 300;
+}
+/* line 49, ../sass/_nav.scss */
+.navbar-user .btn-link:hover {
+  opacity: 1;
+}
+/* line 53, ../sass/_nav.scss */
+.navbar-user .profile {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+/* line 57, ../sass/_nav.scss */
+.navbar-user .profile-img {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #fff url(../img/user.png) no-repeat center;
+  background-size: contain;
+}
+/* line 65, ../sass/_nav.scss */
+.navbar-user .material-icons {
+  padding: 5px 0;
+}
+/* line 69, ../sass/_nav.scss */
+.navbar-user .dropdown .dropdown-menu {
+  border: none;
+}
+/* line 72, ../sass/_nav.scss */
+.navbar-user .dropdown .material-icons {
+  font-size: 16px;
+  margin-right: 14px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 80, ../sass/_nav.scss */
+  .navbar .btn-secondary {
+    position: absolute;
+    right: 15px;
+    bottom: 5px;
+  }
+
+  /* line 85, ../sass/_nav.scss */
+  .navbar.login {
+    position: static;
+  }
+}
+/* line 1, ../sass/_internal.scss */
+.page-title {
+  padding: 25px 0;
+  color: #fff;
+}
+
+/* line 5, ../sass/_internal.scss */
+.section-title {
+  text-align: center;
+  padding: 50px 0 50px;
+}
+/* line 8, ../sass/_internal.scss */
+.section-title .sub {
+  color: #959494;
+}
+
+/* line 12, ../sass/_internal.scss */
+.service-box {
+  text-align: center;
+  margin-bottom: 15px;
+}
+/* line 15, ../sass/_internal.scss */
+.service-box img {
+  max-width: 100px;
+}
+/* line 18, ../sass/_internal.scss */
+.service-box .material-icons {
+  font-size: 120px;
+  color: #6BB8D7;
+}
+
+/* line 1, ../sass/_feed.scss */
+.profile {
+  text-align: center;
+}
+/* line 3, ../sass/_feed.scss */
+.profile .profile-img {
+  width: 100px;
+  height: 100px;
+  display: block;
+}

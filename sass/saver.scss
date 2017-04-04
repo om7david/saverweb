@@ -1,0 +1,155 @@
+@import 'variables';
+@import 'mixins';
+body,
+html {
+    height: 100%;
+    font-family: 'Fira Sans';
+    color: #5d5c5c;
+}
+
+input {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+}
+
+a {
+    color: $accent;
+}
+section{
+    padding: 100px 0;
+}
+.text-large{
+    font-size: 1.2em;
+}
+.btn {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: $accent;
+    color: #fff;
+    border-color: $accent;
+    &:hover {
+        background: darken($accent, 10%);
+        color: #fff;
+        border-color: darken($accent, 10%);
+    }
+}
+
+.btn-secondary {
+    background-color: #fff;
+    opacity: .8;
+    color: $accent;
+    border-color: #fff;
+    &:hover {
+        color: $accent;
+        opacity: 1;
+    }
+}
+
+.bg-light {
+    background: $primary;
+}
+
+.card {
+    background: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    .card-header {
+        background: #0dd7bc;
+        background: -moz-linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
+        background: -webkit-linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
+        background: linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0dd7bc', endColorstr='#6bbad7', GradientType=1);
+        padding: 15px 15px;
+        color: #fff;
+        a{
+            color: #fff;
+        }
+    }
+    .card-body {
+        padding: 15px 15%;
+        input[type=text],
+        input[type=email],
+        input[type=password] {
+            width: 100%;
+        }
+    }
+}
+
+.header {
+    height: 100%;
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+    position: relative;
+    &.home {
+        background: url(../img/back-register.jpg) no-repeat center;
+        background-size: cover;
+    }
+    input {
+        margin-bottom: 15px;
+    }
+}
+
+.header .card {
+    margin-top: 100px;
+    margin-bottom: 75px;
+}
+
+.text-tiny {
+    font-size: 0.8em;
+}
+
+.form.horizontal {
+    display: flex;
+    .form-input {
+        margin-left: 10px;
+    }
+    input {
+        display: block;
+    }
+    input[type=submit] {
+        display: inline-block;
+    }
+}
+
+footer {
+    background: #333;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    a {
+        display: inline-block;
+        padding: 5px 15px;
+        color: #fff;
+        opacity: .8;
+        font-size: .8em;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
+.footer-home {
+    position: absolute;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        display: block;
+        height: auto;
+        .card {
+            margin-top: 15px;
+        }
+    }
+}
+
+@import 'nav';
+@import 'internal';
+@import 'feed';
