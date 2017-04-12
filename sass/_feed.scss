@@ -1,51 +1,126 @@
-    .feed {
-        margin: 65px 0 25px;
-        .profile {
-            text-align: center;
-            .profile-img {
-                width: 100px;
-                height: 100px;
-                margin: 0 auto;
-                display: block;
-                border-radius: 50%;
-                background: #fff url(../img/user.png);
-            }
+.feed {
+    margin: 65px 0 25px;
+    .profile {
+        text-align: center;
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            display: block;
+            border-radius: 50%;
+            background: #fff url(../img/user.png);
         }
-        .sidebar-left {
-            .card-footer {
-                padding: 10px;
-                border-top: 1px solid $light;
-                a {
+    }
+    .sidebar-left {
+        .card-footer {
+            padding: 10px;
+            border-top: 1px solid $light;
+            a {
+                color: $midgray;
+                font-size: 12px;
+                &:after {
+                    content: '•';
                     color: $midgray;
-                    font-size: 12px;
-                    &:after {
-                        content: '•';
-                        color: $midgray;
-                        margin: 0 5px 0 8px;
-                    }
-                    &:last-child::after {
-                        content: '';
-                    }
+                    margin: 0 5px 0 8px;
                 }
-            }
-            .followers {
-                text-align: center;
-                border-bottom: 1px solid $light;
-                font-size: 16px;
-                a {
-                    display: inline-block;
-                    border-right: 1px solid $light;
-                    padding: 10px;
-                    &:last-child {
-                        border: none;
-                    }
+                &:last-child::after {
+                    content: '';
                 }
             }
         }
-        .posts {
-            .profile {
-                text-align: left;
-                margin: 0 0;
+        .followers {
+            text-align: center;
+            border-bottom: 1px solid $light;
+            font-size: 16px;
+            a {
+                display: inline-block;
+                border-right: 1px solid $light;
+                padding: 10px;
+                &:last-child {
+                    border: none;
+                }
             }
         }
     }
+    .posts {
+        .post {
+            margin-bottom: 15px;
+        }
+        .post-header {
+            .profile {
+                text-align: left;
+            }
+            .profile-img {
+                text-align: left;
+                background-size: cover;
+                width: 50px;
+                height: 50px;
+                margin-left: 0;
+                margin-right: 10px;
+                float: left;
+                border-radius: 3px;
+                border: 1px solid $light;
+            }
+            .meta {
+                opacity: .3;
+            }
+        }
+        .post-description {
+            clear: both;
+            margin: 25px 0 10px;
+            ;
+        }
+        .post-img {
+            max-height: 250px;
+            overflow: hidden;
+            margin-bottom: 10px;
+        }
+        .post-actions {
+            text-align: right;
+            font-size: 16px;
+            a {
+                display: inline-block;
+                padding: 10px 5px;
+                margin-left: 15px;
+            }
+        }
+    }
+    .sidebar-right{
+        .btn-float-right{
+            position: absolute;
+            top: 10px; 
+            right: 25px;
+        }
+        .img-list{
+            list-style-type: none;
+            margin:0;
+            padding: 0;
+            .img-list-item{
+                margin-bottom: 10px;
+                display: inline-block;
+                overflow: hidden;
+                text-overflow: ellipsis
+            }
+            img{
+                float:left;
+                width: 20%;
+                height: auto;
+                margin-right: 5%;
+            }
+            span{
+                float:left;
+                width: 75%;
+                height: 40px;                
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    .feed{
+        margin-top: 140px;
+    }
+    .sidebar-left,
+    .sidebar-right{
+        display: none;
+    }
+}
