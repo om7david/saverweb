@@ -32,11 +32,13 @@ a {
 section {
     padding: 100px 0;
 }
-.wrapper{
+
+.wrapper {
     max-width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 }
+
 .text-large {
     font-size: 1.2em;
 }
@@ -45,7 +47,8 @@ section {
     text-transform: uppercase;
     font-weight: bold;
 }
-.btn-link{
+
+.btn-link {
     color: $accent;
     &:hover,
     &:active,
@@ -98,10 +101,10 @@ section {
             color: #fff;
         }
     }
-    .card-content{
+    .card-content {
         padding: 10px;
     }
-    .card-footer{
+    .card-footer {
         border-top: 1px solid $light;
     }
 }
@@ -119,8 +122,20 @@ section {
     input {
         margin-bottom: 15px;
     }
-    .card-content{
-        padding: 10px 5% ;
+    .card-content {
+        padding: 10px 5%;
+    }
+}
+
+.profile {
+    text-align: center;
+    .profile-img {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        display: block;
+        border-radius: 50%;
+        background: gray url(../img/user.png);
     }
 }
 

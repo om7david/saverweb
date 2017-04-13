@@ -31,6 +31,7 @@
                             <a href="#" class="btn btn-link"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
                             <a href="#" class="btn btn-link"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
                             <a href="#" class="btn btn-link"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                            <a href="#mobile-nav" class="btn btn-link hamburger" data-toggle="modal" data-target="#mobile-nav"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
                         </div>
                         <div class="dropdown">
                             <a class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown"><img src="img/user.png" class="profile-img-sm"> Jhon Doe <span class="caret"></span></a>
@@ -39,9 +40,6 @@
                                 <li><a href="#"><i class="material-icons">exit_to_app</i>Salir</a></li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="menu">
-                        <a href="" class="btn-link"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
                     </div>
                 </div>
                 <div class="col-sm-4 col-sm-pull-5">
@@ -56,6 +54,46 @@
             </div>
         </div>
     </nav>
+    <div id="mobile-nav" class="modal fade">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="profile text-center">
+                        <a href="#">
+                            <div class="profile-img">
+                            </div>
+                            <div class="profile-description">
+                                <h4>Juan Cevallos</h4>
+                                <p>Plomero</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>
+                            <a href="#" data-dismiss="modal">Seguidores</a>
+                        </li>
+                        <li>
+                            <a href="#" data-dismiss="modal">Siguiendo</a>
+                        </li>
+                        <li>
+                            <a href="#" data-dismiss="modal">Contactos</a>
+                        </li>
+                        <li>
+                            <a href="#" data-dismiss="modal">Ofertas</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
     <div class="feed">
         <div class="wrapper">
             <div class="row">
@@ -82,15 +120,14 @@
                                         <li>
                                             <a href="#">Siguiendo: <b>3456</b></a>
                                         </li>
-                                        <li><a href="#"><i class="material-icons">perm_contact_calendar</i> Contactos</a></li>
-                                        <li><a href="#"><i class="material-icons">label</i> Ofertas</a></li>
+                                        <li><a href="#"> Contactos</a></li>
+                                        <li><a href="#"> Ofertas</a></li>
                                     </ul>
-
-                                    <div class="card-footer">
-                                        <a href="#">Terminos y Condiciones</a>
-                                        <a href="#">Acerca de Saver</a>
-                                    </div>
                                 </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">Terminos y Condiciones</a>
+                                <a href="#">Acerca de Saver</a>
                             </div>
                         </div>
                     </div>
