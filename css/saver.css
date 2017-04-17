@@ -31,78 +31,83 @@ a:hover, a:active, a:focus {
   text-decoration: none;
 }
 
-/* line 32, ../sass/saver.scss */
+/* line 31, ../sass/saver.scss */
+h4 {
+  line-height: normal;
+}
+
+/* line 34, ../sass/saver.scss */
 section {
   padding: 100px 0;
 }
 
-/* line 36, ../sass/saver.scss */
+/* line 38, ../sass/saver.scss */
 .wrapper {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-/* line 42, ../sass/saver.scss */
+/* line 44, ../sass/saver.scss */
 .text-large {
   font-size: 1.2em;
 }
 
-/* line 46, ../sass/saver.scss */
+/* line 48, ../sass/saver.scss */
 .btn {
   text-transform: uppercase;
   font-weight: bold;
 }
 
-/* line 51, ../sass/saver.scss */
+/* line 53, ../sass/saver.scss */
 .btn-link {
   color: #6BB8D7;
 }
-/* line 53, ../sass/saver.scss */
+/* line 55, ../sass/saver.scss */
 .btn-link:hover, .btn-link:active, .btn-link:focus {
   color: #359FC5;
   text-decoration: none;
 }
 
-/* line 61, ../sass/saver.scss */
+/* line 63, ../sass/saver.scss */
 .btn-primary {
   background-color: #6BB8D7;
   color: #fff;
   border-color: #6BB8D7;
 }
-/* line 65, ../sass/saver.scss */
+/* line 67, ../sass/saver.scss */
 .btn-primary:hover {
   background: #43a5cc;
   color: #fff;
   border-color: #43a5cc;
 }
 
-/* line 72, ../sass/saver.scss */
+/* line 74, ../sass/saver.scss */
 .btn-secondary {
   background-color: #fff;
   opacity: .8;
   color: #6BB8D7;
   border-color: #fff;
 }
-/* line 77, ../sass/saver.scss */
+/* line 79, ../sass/saver.scss */
 .btn-secondary:hover {
   color: #6BB8D7;
   opacity: 1;
 }
 
-/* line 83, ../sass/saver.scss */
+/* line 85, ../sass/saver.scss */
 .bg-light {
   background: #F8F8F8;
 }
 
-/* line 87, ../sass/saver.scss */
+/* line 89, ../sass/saver.scss */
 .card {
   background: #fff;
   overflow: hidden;
   border-radius: 5px;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
-/* line 92, ../sass/saver.scss */
+/* line 94, ../sass/saver.scss */
 .card .card-header {
   background: #0dd7bc;
   background: -moz-linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
@@ -112,20 +117,20 @@ section {
   padding: 15px 15px;
   color: #fff;
 }
-/* line 100, ../sass/saver.scss */
+/* line 102, ../sass/saver.scss */
 .card .card-header a {
   color: #fff;
 }
-/* line 104, ../sass/saver.scss */
+/* line 106, ../sass/saver.scss */
 .card .card-content {
   padding: 10px;
 }
-/* line 107, ../sass/saver.scss */
+/* line 109, ../sass/saver.scss */
 .card .card-footer {
   border-top: 1px solid #F8F8F8;
 }
 
-/* line 112, ../sass/saver.scss */
+/* line 114, ../sass/saver.scss */
 .header {
   height: 100%;
   width: 100%;
@@ -133,25 +138,25 @@ section {
   vertical-align: middle;
   position: relative;
 }
-/* line 118, ../sass/saver.scss */
+/* line 120, ../sass/saver.scss */
 .header.home {
   background: url(../img/back-register.jpg) no-repeat center;
   background-size: cover;
 }
-/* line 122, ../sass/saver.scss */
-.header input {
+/* line 124, ../sass/saver.scss */
+.header input, .header select {
   margin-bottom: 15px;
 }
-/* line 125, ../sass/saver.scss */
+/* line 127, ../sass/saver.scss */
 .header .card-content {
   padding: 10px 5%;
 }
 
-/* line 130, ../sass/saver.scss */
+/* line 132, ../sass/saver.scss */
 .profile {
   text-align: center;
 }
-/* line 132, ../sass/saver.scss */
+/* line 134, ../sass/saver.scss */
 .profile .profile-img {
   width: 100px;
   height: 100px;
@@ -161,35 +166,35 @@ section {
   background: gray url(../img/user.png);
 }
 
-/* line 142, ../sass/saver.scss */
+/* line 144, ../sass/saver.scss */
 .header .card {
   margin-top: 100px;
   margin-bottom: 75px;
 }
 
-/* line 147, ../sass/saver.scss */
+/* line 149, ../sass/saver.scss */
 .text-tiny {
   font-size: 0.8em;
 }
 
-/* line 151, ../sass/saver.scss */
+/* line 153, ../sass/saver.scss */
 .form.horizontal {
   display: flex;
 }
-/* line 153, ../sass/saver.scss */
+/* line 155, ../sass/saver.scss */
 .form.horizontal .form-input {
   margin-left: 10px;
 }
-/* line 156, ../sass/saver.scss */
+/* line 158, ../sass/saver.scss */
 .form.horizontal input {
   display: block;
 }
-/* line 159, ../sass/saver.scss */
+/* line 161, ../sass/saver.scss */
 .form.horizontal input[type=submit] {
   display: inline-block;
 }
 
-/* line 164, ../sass/saver.scss */
+/* line 166, ../sass/saver.scss */
 footer {
   background: #333;
   text-align: center;
@@ -197,7 +202,7 @@ footer {
   width: 100%;
   color: #fff;
 }
-/* line 170, ../sass/saver.scss */
+/* line 172, ../sass/saver.scss */
 footer a {
   display: inline-block;
   padding: 5px 15px;
@@ -205,24 +210,24 @@ footer a {
   opacity: .8;
   font-size: .8em;
 }
-/* line 176, ../sass/saver.scss */
+/* line 178, ../sass/saver.scss */
 footer a:hover {
   opacity: 1;
 }
 
-/* line 182, ../sass/saver.scss */
+/* line 184, ../sass/saver.scss */
 .footer-home {
   position: absolute;
   bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 188, ../sass/saver.scss */
+  /* line 190, ../sass/saver.scss */
   .header {
     display: block;
     height: auto;
   }
-  /* line 191, ../sass/saver.scss */
+  /* line 193, ../sass/saver.scss */
   .header .card {
     margin-top: 15px;
   }
