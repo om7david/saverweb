@@ -83,49 +83,53 @@ section {
   text-transform: uppercase;
   font-weight: bold;
 }
+/* line 72, ../sass/saver.scss */
+.btn:hover, .btn:active, .btn:focus {
+  outline: none;
+}
 
-/* line 74, ../sass/saver.scss */
+/* line 79, ../sass/saver.scss */
 .btn-link {
   color: #6AB8D7;
 }
-/* line 76, ../sass/saver.scss */
+/* line 81, ../sass/saver.scss */
 .btn-link:hover, .btn-link:active, .btn-link:focus {
   color: #359FC5;
   text-decoration: none;
 }
 
-/* line 84, ../sass/saver.scss */
+/* line 89, ../sass/saver.scss */
 .btn-primary {
   background-color: #6AB8D7;
   color: #fff;
   border-color: #6AB8D7;
 }
-/* line 88, ../sass/saver.scss */
+/* line 93, ../sass/saver.scss */
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   background: #42a5cc;
   color: #fff;
   border-color: #42a5cc;
 }
 
-/* line 97, ../sass/saver.scss */
+/* line 102, ../sass/saver.scss */
 .btn-secondary {
   background-color: #fff;
   opacity: .8;
   color: #6AB8D7;
   border-color: #fff;
 }
-/* line 102, ../sass/saver.scss */
+/* line 107, ../sass/saver.scss */
 .btn-secondary:hover {
   color: #6AB8D7;
   opacity: 1;
 }
 
-/* line 108, ../sass/saver.scss */
+/* line 113, ../sass/saver.scss */
 .bg-light {
   background: #F8F8F8;
 }
 
-/* line 112, ../sass/saver.scss */
+/* line 117, ../sass/saver.scss */
 .card {
   background: #fff;
   overflow: hidden;
@@ -134,7 +138,7 @@ section {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   position: relative;
 }
-/* line 119, ../sass/saver.scss */
+/* line 124, ../sass/saver.scss */
 .card .card-header {
   background: #0dd7bc;
   background: -moz-linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
@@ -144,31 +148,31 @@ section {
   padding: 15px 15px;
   color: #fff;
 }
-/* line 127, ../sass/saver.scss */
+/* line 132, ../sass/saver.scss */
 .card .card-header a {
   color: #fff;
 }
-/* line 131, ../sass/saver.scss */
+/* line 136, ../sass/saver.scss */
 .card .card-content {
   padding: 15px 15px 5px;
 }
-/* line 134, ../sass/saver.scss */
+/* line 139, ../sass/saver.scss */
 .card .card-footer {
   border-top: 1px solid #F8F8F8;
 }
-/* line 137, ../sass/saver.scss */
+/* line 142, ../sass/saver.scss */
 .card .card-title {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 141, ../sass/saver.scss */
+/* line 146, ../sass/saver.scss */
 .card .card-subtitle {
   margin-top: 10px;
   margin-bottom: 0;
   opacity: .5;
 }
 
-/* line 148, ../sass/saver.scss */
+/* line 153, ../sass/saver.scss */
 .header {
   height: 100%;
   width: 100%;
@@ -176,41 +180,51 @@ section {
   vertical-align: middle;
   position: relative;
 }
-/* line 154, ../sass/saver.scss */
+/* line 159, ../sass/saver.scss */
 .header.home {
   background: url(../img/back-register.jpg) no-repeat center;
   background-size: cover;
 }
-/* line 158, ../sass/saver.scss */
+/* line 163, ../sass/saver.scss */
 .header .card-content {
   padding: 10px 5%;
 }
 
-/* line 163, ../sass/saver.scss */
+/* line 168, ../sass/saver.scss */
 .profile {
   text-align: center;
 }
 
-/* line 167, ../sass/saver.scss */
+/* line 171, ../sass/saver.scss */
 .profile-img {
+  background: gray url(../img/user.png) no-repeat;
+}
+
+/* line 174, ../sass/saver.scss */
+.service-img {
+  background: gray url(../img/service.jpg) no-repeat;
+}
+
+/* line 177, ../sass/saver.scss */
+.profile-img,
+.service-img {
   width: 100px;
   height: 100px;
   margin: 0 auto;
   display: block;
   border-radius: 50%;
-  background: gray url(../img/user.png) no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
 }
 
-/* line 178, ../sass/saver.scss */
-.profile-img-lg {
+/* line 189, ../sass/saver.scss */
+.img-lg {
   width: 150px;
   height: 150px;
 }
 
-/* line 182, ../sass/saver.scss */
+/* line 193, ../sass/saver.scss */
 .btn-float {
   position: absolute;
   top: 15px;
@@ -221,67 +235,67 @@ section {
   padding: 0;
 }
 
-/* line 191, ../sass/saver.scss */
+/* line 202, ../sass/saver.scss */
 .top-bar {
   position: relative;
   margin-bottom: 15px;
 }
-/* line 194, ../sass/saver.scss */
+/* line 205, ../sass/saver.scss */
 .top-bar .nav-tabs {
   position: absolute;
   top: 0;
   right: 0;
   border-bottom: none;
 }
-/* line 201, ../sass/saver.scss */
+/* line 212, ../sass/saver.scss */
 .top-bar .nav > li > a {
   font-size: 1.2em;
 }
-/* line 204, ../sass/saver.scss */
+/* line 215, ../sass/saver.scss */
 .top-bar .nav > li > a:focus, .top-bar .nav > li > a:hover {
   border-color: transparent;
   background: none;
 }
-/* line 208, ../sass/saver.scss */
+/* line 219, ../sass/saver.scss */
 .top-bar .nav-tabs > li.active > a, .top-bar .nav-tabs > li.active > a:focus, .top-bar .nav-tabs > li.active > a:hover {
   border: none;
   border-bottom: 3px solid #6AB8D7;
 }
 
-/* line 214, ../sass/saver.scss */
+/* line 225, ../sass/saver.scss */
 .tab-pane {
   padding: 0 0 15px;
 }
 
-/* line 217, ../sass/saver.scss */
+/* line 228, ../sass/saver.scss */
 .header .card {
   margin-top: 100px;
   margin-bottom: 75px;
 }
 
-/* line 222, ../sass/saver.scss */
+/* line 233, ../sass/saver.scss */
 .text-tiny {
   font-size: 0.8em;
 }
 
-/* line 226, ../sass/saver.scss */
+/* line 237, ../sass/saver.scss */
 .form.horizontal {
   display: flex;
 }
-/* line 228, ../sass/saver.scss */
+/* line 239, ../sass/saver.scss */
 .form.horizontal .form-input {
   margin-left: 10px;
 }
-/* line 231, ../sass/saver.scss */
+/* line 242, ../sass/saver.scss */
 .form.horizontal input {
   display: block;
 }
-/* line 234, ../sass/saver.scss */
+/* line 245, ../sass/saver.scss */
 .form.horizontal input[type=submit] {
   display: inline-block;
 }
 
-/* line 239, ../sass/saver.scss */
+/* line 250, ../sass/saver.scss */
 footer {
   background: #333;
   text-align: center;
@@ -289,7 +303,7 @@ footer {
   width: 100%;
   color: #fff;
 }
-/* line 245, ../sass/saver.scss */
+/* line 256, ../sass/saver.scss */
 footer a {
   display: inline-block;
   padding: 5px 15px;
@@ -297,35 +311,35 @@ footer a {
   opacity: .8;
   font-size: .8em;
 }
-/* line 251, ../sass/saver.scss */
+/* line 262, ../sass/saver.scss */
 footer a:hover {
   opacity: 1;
 }
 
-/* line 257, ../sass/saver.scss */
+/* line 268, ../sass/saver.scss */
 .footer-home {
   position: absolute;
   bottom: 0;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 263, ../sass/saver.scss */
+  /* line 274, ../sass/saver.scss */
   .header {
     display: block;
     height: auto;
   }
-  /* line 266, ../sass/saver.scss */
+  /* line 277, ../sass/saver.scss */
   .header .card {
     margin-top: 15px;
   }
 
-  /* line 270, ../sass/saver.scss */
+  /* line 281, ../sass/saver.scss */
   .page-content {
     margin-top: 140px;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 275, ../sass/saver.scss */
+  /* line 286, ../sass/saver.scss */
   .top-bar .nav-tabs {
     position: static;
   }
@@ -771,40 +785,49 @@ footer a:hover {
   color: #6AB8D7;
 }
 
-/* line 19, ../sass/_profile.scss */
+/* line 18, ../sass/_profile.scss */
+.service {
+  position: relative;
+}
+/* line 20, ../sass/_profile.scss */
 .service .service-description {
   position: relative;
 }
-/* line 22, ../sass/_profile.scss */
+/* line 23, ../sass/_profile.scss */
 .service .rating {
   position: absolute;
   top: 0;
   right: 0;
   padding: 0;
 }
-/* line 28, ../sass/_profile.scss */
+/* line 29, ../sass/_profile.scss */
 .service .rating span {
   font-size: 1em;
   margin: 0;
 }
-/* line 34, ../sass/_profile.scss */
+/* line 35, ../sass/_profile.scss */
 .service .price {
   padding-left: 20px;
 }
-
 /* line 38, ../sass/_profile.scss */
-.edit-profile-img {
+.service .btn-float {
+  top: 0;
+  right: 0;
+}
+
+/* line 43, ../sass/_profile.scss */
+.edit-img {
   font-size: 1.8em;
   position: absolute;
   right: -8px;
   bottom: -8px;
 }
 
-/* line 44, ../sass/_profile.scss */
+/* line 49, ../sass/_profile.scss */
 .edit-group {
   position: relative;
 }
-/* line 46, ../sass/_profile.scss */
+/* line 51, ../sass/_profile.scss */
 .edit-group .btn-sm {
   position: absolute;
   top: 0;
@@ -812,7 +835,7 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 54, ../sass/_profile.scss */
+  /* line 59, ../sass/_profile.scss */
   .service .rating {
     position: static;
     text-align: left;

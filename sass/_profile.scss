@@ -16,6 +16,7 @@
     }
 }
 .service{
+    position: relative;
     .service-description{
         position: relative;
     }
@@ -34,8 +35,12 @@
     .price{
         padding-left: 20px;
     }
+    .btn-float{
+        top:0;
+        right: 0;
+    }
 }
-.edit-profile-img{
+.edit-img{
     font-size:1.8em;
     position: absolute;
     right:-8px;

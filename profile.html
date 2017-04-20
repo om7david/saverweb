@@ -106,7 +106,7 @@
                         <div class="card-content">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <div class="profile-img profile-img-lg">
+                                    <div class="profile-img img-lg">
                                     </div>
                                     <div class="rating">
                                         <span class="glyphicon glyphicon-star"></span>
@@ -125,7 +125,42 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-primary btn-float"><span class="glyphicon glyphicon-cog"></span></a>
+                        <!-- Button trigger modal -->
+                        <a href="#" class="btn btn-float" data-toggle="modal" data-target="#edit-profile-info"><span class="glyphicon glyphicon-pencil"></span></a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="edit-profile-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"></span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Editar información de perfil</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <div class="profile-img img-lg">
+                                                    <a href="#" class="edit-img"><span class="glyphicon glyphicon-camera"></span></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <label>Nombre</label>
+                                                <input type="text" class="form-control" placeholder="Nombre">
+                                                <label>Apellido</label>
+                                                <input type="text" class="form-control" placeholder="Apellido">
+                                                <label>Usuario</label>
+                                                <input type="text" class="form-control" placeholder="Usuario">
+                                                <label>Descripción</label>
+                                                <textarea class="form-control" placeholder="Descripción"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-primary">Guardar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="card services-list">
                         <div class="card-content">
@@ -148,11 +183,50 @@
                                         <span class="glyphicon glyphicon-star"></span>
                                         <span class="glyphicon glyphicon-star-empty"></span>
                                     </div>
-                                    <p>Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo. Mercedem aut nummos unde. <a href="">Leer más</a></p>
-
+                                    <p>Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo. Mercedem aut nummos unde.</p>
                                 </div>
-                                <div class="media-right">
+                                <div class="media-right media-middle">
                                     <h4 class="media-heading price">$150.00</h4>
+                                </div>
+                                <!-- Button trigger modal -->
+                                <a href="#" class="btn btn-float" data-toggle="modal" data-target="#edit-service"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="edit-service" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"></span></button>
+                                                <h4 class="modal-title" id="myModalLabel">Editar información de servicio</h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="service-img img-lg">
+                                                            <a href="#" class="edit-img"><span class="glyphicon glyphicon-camera"></span></a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <label>Servicio</label>
+                                                        <input type="text" class="form-control" placeholder="Nombre">
+                                                        <label>Categoía</label>
+                                                        <select class="form-control">
+                                                        <option>Categoría</option>
+                                                        <option>Diseño Gráfico</option>
+                                                        <option>Photografía</option>
+                                                    </select>
+                                                        <label>Valor</label>
+                                                        <input type="text" class="form-control" placeholder="$00.00">
+                                                        <label>Descripción</label>
+                                                        <textarea class="form-control" placeholder="Descripción"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                                <button type="button" class="btn btn-primary">Guardar</button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="media service">
@@ -173,12 +247,14 @@
                                         <span class="glyphicon glyphicon-star"></span>
                                         <span class="glyphicon glyphicon-star-empty"></span>
                                     </div>
-                                    <p>Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo. Mercedem aut nummos unde. <a href="">Leer más</a></p>
-
+                                    <p>Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo. Mercedem aut nummos unde. </p>
                                 </div>
-                                <div class="media-right">
+                                <div class="media-right media-middle">
                                     <h4 class="media-heading price">$150.00</h4>
                                 </div>
+                                <!-- Button trigger modal -->
+                                <a href="#" class="btn btn-float" data-toggle="modal" data-target="#edit-service-1"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <!-- Modal -->
                             </div>
                             <div class="media service">
                                 <div class="media-left service-image">
@@ -198,14 +274,17 @@
                                         <span class="glyphicon glyphicon-star"></span>
                                         <span class="glyphicon glyphicon-star-empty"></span>
                                     </div>
-                                    <p>Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo. Mercedem aut nummos unde. <a href="">Leer más</a></p>
+                                    <p>Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quam diu etiam furor iste tuus nos eludet? Prima luce, cum quibus mons aliud consensu ab eo. Mercedem aut nummos unde.</p>
 
                                 </div>
-                                <div class="media-right">
+                                <div class="media-right media-middle">
                                     <h4 class="media-heading price">$150.00</h4>
                                 </div>
+                                <!-- Button trigger modal -->
+                                <a href="#" class="btn btn-float" data-toggle="modal" data-target="#edit-service-1"><span class="glyphicon glyphicon-pencil"></span></a>
+                                <!-- Modal -->
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -239,7 +318,63 @@
                                     <a href="#"><i class="fa fa-instagram"></i> Instagram</a>
                                 </li>
                             </ul>
-                        </div>                        
+                        </div>
+                        <!-- Button trigger modal -->
+                        <a href="#" class="btn btn-float" data-toggle="modal" data-target="#edit-contact"><span class="glyphicon glyphicon-pencil"></span></a>
+                        <!-- Modal -->
+                        <div class="modal fade" id="edit-contact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"></span></button>
+                                        <h4 class="modal-title" id="myModalLabel">Editar información de contacto</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="edit-group">
+                                                <h4>Personal</h4>
+                                                <a href="#" class="btn btn-link btn-sm">Agregar contacto personal</a>
+                                                <div class="row-input">
+                                                    <select class="form-control">
+                                                        <option>Teléfono</option>
+                                                        <option>Correo Electrónico</option>
+                                                        <option>Dirección</option>
+                                                    </select>
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                                <div class="row-input">
+                                                    <select class="form-control">
+                                                        <option>Teléfono</option>
+                                                        <option>Correo Electrónico</option>
+                                                        <option>Dirección</option>
+                                                    </select>
+                                                    <input type="text" class="form-control" placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="edit-group">
+                                                <h4>Redes sociales</h4>
+                                                <a href="#" class="btn btn-link btn-sm">Agregar red social</a>
+                                                <div class="row-input">
+                                                    <select class="form-control">
+                                                        <option>Facebook</option>
+                                                        <option>Instagram</option>
+                                                        <option>LinkedIn</option>
+                                                        <option>Twitter</option>
+                                                    </select>
+                                                    <input type="text" class="form-control" placeholder="URL">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+                                        <button type="button" class="btn btn-primary">Guardar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

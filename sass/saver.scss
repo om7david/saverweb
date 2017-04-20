@@ -69,6 +69,11 @@ section {
 .btn {
     text-transform: uppercase;
     font-weight: bold;
+    &:hover,
+    &:active,
+    &:focus{
+        outline:none;
+    }
 }
 
 .btn-link {
@@ -163,19 +168,25 @@ section {
 .profile {
     text-align: center;
 }
-
-.profile-img {
+.profile-img{
+    background: gray url(../img/user.png) no-repeat;
+}
+.service-img{
+    background: gray url(../img/service.jpg) no-repeat;
+}
+.profile-img,
+.service-img{
     width: 100px;
     height: 100px;
     margin: 0 auto;
     display: block;
-    border-radius: 50%;
-    background: gray url(../img/user.png) no-repeat;
+    border-radius: 50%;    
     background-position: center;
     background-size: cover;
     position: relative;
 }
-.profile-img-lg{
+
+.img-lg{
     width: 150px;
     height: 150px;
 }
