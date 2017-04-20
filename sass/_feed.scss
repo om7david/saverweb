@@ -1,5 +1,8 @@
 .feed {    
     .sidebar-left {
+        h4{
+          margin-bottom: 0;  
+        }
         .card-footer {
             padding: 10px;
             border-top: 1px solid $light;
@@ -37,6 +40,7 @@
         .post-header {
             .profile {
                 text-align: left;
+                margin-botom: 0px;
             }
             .profile-img {
                 text-align: left;
@@ -52,6 +56,7 @@
             .meta {
                 opacity: .3;
             }
+            
         }
         .post-description {
             clear: both;
@@ -71,6 +76,18 @@
                 padding: 10px 5px;
                 margin-left: 15px;
             }
+        }
+    }
+    .new-post{
+        .profile-img{
+            width: 50px;
+            height: 50px;
+        }
+        textarea{
+            margin-bottom: 10px;
+        }
+        a{
+            font-size: 22px;
         }
     }
     .sidebar-right{
