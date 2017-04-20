@@ -7,10 +7,11 @@ html {
     color: #5d5c5c;
 }
 
-input {
+input, select {
     padding: 5px;
     border-radius: 3px;
     border: none;
+    margin-bottom:10px;
 }
 
 input[type=text],
@@ -18,7 +19,20 @@ input[type=email],
 input[type=password] {
     width: 100%;
 }
-
+label{
+    margin-bottom: 0;
+}
+.row-input{
+    input,select{
+        display: inline-block;
+    }
+    select{
+        width: 33%;
+    }
+    input{
+        width: 66%;
+    }
+}
 a {
     color: $accent;
     &:hover,
@@ -28,17 +42,24 @@ a {
         text-decoration: none;
     }
 }
-h4{
+
+h4 {
     line-height: normal;
 }
+
 section {
     padding: 100px 0;
 }
 
+.page-content {
+    margin: 65px 0 25px;
+}
+
 .wrapper {
     max-width: 1200px;
-    padding: 0 15px;
     margin: 0 auto;
+    padding-right:15px;
+    padding-left: 15px;
 }
 
 .text-large {
@@ -64,7 +85,9 @@ section {
     background-color: $accent;
     color: #fff;
     border-color: $accent;
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active{
         background: darken($accent, 10%);
         color: #fff;
         border-color: darken($accent, 10%);
@@ -90,7 +113,9 @@ section {
     background: #fff;
     overflow: hidden;
     border-radius: 5px;
+    margin-bottom: 15px;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    position: relative;
     .card-header {
         background: #0dd7bc;
         background: -moz-linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
@@ -104,10 +129,19 @@ section {
         }
     }
     .card-content {
-        padding: 10px;
+        padding: 15px 15px 5px;
     }
     .card-footer {
         border-top: 1px solid $light;
+    }
+    .card-title{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .card-subtitle{
+        margin-top: 10px;
+        margin-bottom: 0;
+        opacity: .5;
     }
 }
 
@@ -121,9 +155,6 @@ section {
         background: url(../img/back-register.jpg) no-repeat center;
         background-size: cover;
     }
-    input,select {
-        margin-bottom: 15px;
-    }
     .card-content {
         padding: 10px 5%;
     }
@@ -131,16 +162,58 @@ section {
 
 .profile {
     text-align: center;
-    .profile-img {
-        width: 100px;
-        height: 100px;
-        margin: 0 auto;
-        display: block;
-        border-radius: 50%;
-        background: gray url(../img/user.png);
-    }
 }
 
+.profile-img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    background: gray url(../img/user.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.profile-img-lg{
+    width: 150px;
+    height: 150px;
+}
+.btn-float{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding:0;
+}
+.top-bar{
+    position: relative;
+    margin-bottom: 15px;
+    .nav-tabs{
+        position: absolute;
+        top:0;
+        right:0;
+        border-bottom: none;
+        
+    }
+    .nav>li>a{
+        font-size: 1.2em
+    }
+    .nav>li>a:focus, .nav>li>a:hover{
+        border-color:transparent;
+        background:none;
+    }
+    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+        border:none;
+        border-bottom: 3px solid $accent;
+    }
+    
+}
+.tab-pane{
+    padding: 0 0 15px;
+}
 .header .card {
     margin-top: 100px;
     margin-bottom: 75px;
@@ -194,8 +267,17 @@ footer {
             margin-top: 15px;
         }
     }
+    .page-content{
+        margin-top: 140px;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .top-bar .nav-tabs{
+        position: static;
+    }
 }
 
 @import 'nav';
 @import 'internal';
 @import 'feed';
+@import 'profile';

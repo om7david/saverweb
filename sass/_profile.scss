@@ -1,0 +1,58 @@
+.personal-data{
+    h1, h3{
+        margin: 0;
+    }
+    h3{
+        opacity: .5;
+        margin-bottom: 10px;
+    }
+}
+.rating{
+    padding: 10px;
+    text-align: center;
+    span{
+        font-size: 1.5em;
+        color: $accent;
+    }
+}
+.service{
+    .service-description{
+        position: relative;
+    }
+    .rating{
+        position: absolute;
+        top:0;
+        right: 0;
+        padding: 0;
+        
+        span{
+            font-size: 1em;
+            margin: 0;
+        }
+        
+    }
+    .price{
+        padding-left: 20px;
+    }
+}
+.edit-profile-img{
+    font-size:1.8em;
+    position: absolute;
+    right:-8px;
+    bottom: -8px;
+}
+.edit-group{
+    position: relative;
+    .btn-sm{
+        position:absolute;
+        top: 0;
+        right:0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .service .rating{
+        position: static;
+        text-align: left;
+    }
+}

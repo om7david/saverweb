@@ -10,6 +10,9 @@
     a {
         color: #fff;
     }
+    input{
+        margin-bottom: 0;
+    }
     .logo {
         width: 170px;
         float: left;
@@ -77,6 +80,7 @@
         border-radius: 50%;
         background: #fff url(../img/user.png) no-repeat center;
         background-size: contain;
+        margin: 0 5px; 
     }
     .notifications {
         a {
@@ -116,7 +120,7 @@
         padding: 0;
         li {
             a {
-                padding: 10px;
+                padding: 10px 0;
                 display: block;
                 font-size: 16px;
             }
@@ -209,4 +213,3 @@
     }
 }
 
-@media only screen and (max-width: 480px) {}

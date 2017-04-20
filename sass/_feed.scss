@@ -1,5 +1,4 @@
-.feed {
-    margin: 65px 0 25px;    
+.feed {    
     .sidebar-left {
         .card-footer {
             padding: 10px;
@@ -105,9 +104,6 @@
     }
 }
 @media only screen and (max-width: 768px) {
-    .feed{
-        margin-top: 140px;
-    }
     .sidebar-left,
     .sidebar-right{
         display: none;
