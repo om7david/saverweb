@@ -281,8 +281,8 @@ table.pricing{
         font-size: 1.5em;
         font-weight: 400;
     }
-    th.blank{
-        background: transparent;
+    .blank{
+        background-color: transparent !important;
         border-top: 0;
     }
     th.gray{

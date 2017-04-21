@@ -337,8 +337,8 @@ table.pricing th {
   font-weight: 400;
 }
 /* line 284, ../sass/saver.scss */
-table.pricing th.blank {
-  background: transparent;
+table.pricing .blank {
+  background-color: transparent !important;
   border-top: 0;
 }
 /* line 288, ../sass/saver.scss */
