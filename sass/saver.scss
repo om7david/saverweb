@@ -48,7 +48,10 @@ h4 {
 }
 
 section {
-    padding: 100px 0;
+    padding: 50px 0;
+}
+section.other{
+    background: #f1f1f1;
 }
 
 .page-content {
@@ -269,7 +272,34 @@ footer {
     position: absolute;
     bottom: 0;
 }
-
+table.pricing{
+    th{
+        background: $accent;
+        color: #fff;
+        width: 33.3%;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 400;
+    }
+    th.blank{
+        background: transparent;
+        border-top: 0;
+    }
+    th.gray{
+        background: $muted;
+    }
+    td{
+        height: 80px;
+        vertical-align: middle !important;
+    }
+    td.benefit{
+        text-align: left;
+    }
+    .glyphicon{
+        font-size: 30px;
+        color: #80b926;
+    }
+}
 @media only screen and (max-width: 768px) {
     .header {
         display: block;

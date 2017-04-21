@@ -1,10 +1,13 @@
 .page-title{
-    padding: 25px 0;
+    padding: 100px 0;
     color: #fff;
+    h1{
+        font-size: 50px;
+    }
 }
 .section-title{
     text-align: center;
-    padding: 50px 0 50px;
+    padding: 0px 0 50px;
     .sub{
         color: $muted;
     }
