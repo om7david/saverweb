@@ -377,7 +377,7 @@ table.pricing .glyphicon {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 316, ../sass/saver.scss */
+  /* line 317, ../sass/saver.scss */
   .top-bar .nav-tabs {
     position: static;
   }
@@ -460,40 +460,43 @@ table.pricing .glyphicon {
 /* line 49, ../sass/_nav.scss */
 .navbar.static {
   position: static;
-  background-image: url(../img/back-register.jpg);
   background-size: cover;
   background-position: center;
 }
+/* line 54, ../sass/_nav.scss */
+.navbar.static.internal {
+  background-image: url(../img/back-register.jpg);
+}
 
-/* line 58, ../sass/_nav.scss */
+/* line 60, ../sass/_nav.scss */
 .login .logo {
   width: 100%;
 }
 
-/* line 63, ../sass/_nav.scss */
+/* line 65, ../sass/_nav.scss */
 .navbar-user {
   text-align: right;
 }
-/* line 65, ../sass/_nav.scss */
+/* line 67, ../sass/_nav.scss */
 .navbar-user div {
   display: inline-block;
 }
-/* line 68, ../sass/_nav.scss */
+/* line 70, ../sass/_nav.scss */
 .navbar-user .btn-link {
   color: #fff;
   opacity: .8;
   font-weight: 300;
 }
-/* line 72, ../sass/_nav.scss */
+/* line 74, ../sass/_nav.scss */
 .navbar-user .btn-link:hover {
   opacity: 1;
 }
-/* line 76, ../sass/_nav.scss */
+/* line 78, ../sass/_nav.scss */
 .navbar-user .profile {
   margin-left: 10px;
   vertical-align: middle;
 }
-/* line 80, ../sass/_nav.scss */
+/* line 82, ../sass/_nav.scss */
 .navbar-user .profile-img-sm {
   width: 30px;
   height: 30px;
@@ -502,63 +505,63 @@ table.pricing .glyphicon {
   background-size: contain;
   margin: 0 5px;
 }
-/* line 89, ../sass/_nav.scss */
+/* line 91, ../sass/_nav.scss */
 .navbar-user .notifications a {
   font-size: 22px;
   padding: 8px;
 }
-/* line 93, ../sass/_nav.scss */
+/* line 95, ../sass/_nav.scss */
 .navbar-user .notifications .btn.dropdown-toggle {
   font-size: 16px;
   text-transform: none;
 }
-/* line 98, ../sass/_nav.scss */
+/* line 100, ../sass/_nav.scss */
 .navbar-user .hamburger {
   display: none;
 }
-/* line 102, ../sass/_nav.scss */
+/* line 104, ../sass/_nav.scss */
 .navbar-user .dropdown .dropdown-menu {
   border: none;
   left: inherit;
   right: 0;
 }
-/* line 106, ../sass/_nav.scss */
+/* line 108, ../sass/_nav.scss */
 .navbar-user .dropdown .dropdown-menu li a {
   font-size: 1em;
 }
 
-/* line 113, ../sass/_nav.scss */
+/* line 115, ../sass/_nav.scss */
 .menu {
   display: none;
   text-align: right;
   color: #fff;
 }
 
-/* line 119, ../sass/_nav.scss */
+/* line 121, ../sass/_nav.scss */
 .menu .btn-link {
   color: #fff;
   font-size: 28px;
 }
 
-/* line 125, ../sass/_nav.scss */
+/* line 127, ../sass/_nav.scss */
 .vertical-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 130, ../sass/_nav.scss */
+/* line 132, ../sass/_nav.scss */
 .vertical-nav ul li a {
   padding: 10px 0;
   display: block;
   font-size: 16px;
 }
-/* line 137, ../sass/_nav.scss */
+/* line 139, ../sass/_nav.scss */
 .vertical-nav .material-icons {
   transform: translateY(5px);
   margin-right: 10px;
 }
 
-/* line 144, ../sass/_nav.scss */
+/* line 146, ../sass/_nav.scss */
 #mobile-nav .modal-header {
   background: #0dd7bc;
   background: -moz-linear-gradient(45deg, #0dd7bc 0%, #6bbad7 100%);
@@ -571,19 +574,19 @@ table.pricing .glyphicon {
   width: 100%;
   padding: 15px;
 }
-/* line 147, ../sass/_nav.scss */
+/* line 149, ../sass/_nav.scss */
 #mobile-nav .modal-header a {
   color: #fff;
 }
-/* line 150, ../sass/_nav.scss */
+/* line 152, ../sass/_nav.scss */
 #mobile-nav .modal-header a p {
   opacity: .7;
 }
-/* line 153, ../sass/_nav.scss */
+/* line 155, ../sass/_nav.scss */
 #mobile-nav .modal-header h4 {
   margin-bottom: 0;
 }
-/* line 160, ../sass/_nav.scss */
+/* line 162, ../sass/_nav.scss */
 #mobile-nav .modal-header .close {
   font-size: 3em;
   padding: 0;
@@ -591,7 +594,7 @@ table.pricing .glyphicon {
   margin-top: -15px;
   opacity: .4;
 }
-/* line 168, ../sass/_nav.scss */
+/* line 170, ../sass/_nav.scss */
 #mobile-nav .modal-dialog {
   margin: 0;
   margin-top: -1px;
@@ -600,60 +603,60 @@ table.pricing .glyphicon {
   height: 100%;
   width: 300px;
 }
-/* line 175, ../sass/_nav.scss */
+/* line 177, ../sass/_nav.scss */
 #mobile-nav .modal-dialog .modal-content {
   height: 100%;
   border-radius: 0;
   background: #fff;
   padding: 0;
 }
-/* line 180, ../sass/_nav.scss */
+/* line 182, ../sass/_nav.scss */
 #mobile-nav .modal-dialog .modal-content ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-/* line 184, ../sass/_nav.scss */
+/* line 186, ../sass/_nav.scss */
 #mobile-nav .modal-dialog .modal-content ul a {
   display: block;
   border-right: 1px solid #F8F8F8;
   padding: 10px 15px;
   font-size: 1.2em;
 }
-/* line 189, ../sass/_nav.scss */
+/* line 191, ../sass/_nav.scss */
 #mobile-nav .modal-dialog .modal-content ul a:last-child {
   border: none;
 }
-/* line 196, ../sass/_nav.scss */
+/* line 198, ../sass/_nav.scss */
 #mobile-nav .modal-body {
   padding: 0;
 }
 
-/* line 201, ../sass/_nav.scss */
+/* line 203, ../sass/_nav.scss */
 .modal.fade:not(.in) .modal-dialog {
   -webkit-transform: translate3d(25%, 0, 0);
   transform: translate3d(25%, 0, 0);
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 207, ../sass/_nav.scss */
+  /* line 209, ../sass/_nav.scss */
   .navbar .btn-secondary {
     position: absolute;
     right: 15px;
     bottom: 5px;
   }
 
-  /* line 212, ../sass/_nav.scss */
+  /* line 214, ../sass/_nav.scss */
   .navbar.login {
     position: static;
   }
 
-  /* line 215, ../sass/_nav.scss */
+  /* line 217, ../sass/_nav.scss */
   .navbar-user .hamburger {
     display: inline-block;
   }
 
-  /* line 218, ../sass/_nav.scss */
+  /* line 220, ../sass/_nav.scss */
   .notifications .dropdown {
     display: none;
   }
@@ -908,5 +911,313 @@ table.pricing .glyphicon {
   .service .rating {
     position: static;
     text-align: left;
+  }
+}
+/* line 1, ../sass/_chat.scss */
+.chat {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+/* line 5, ../sass/_chat.scss */
+.chat-container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 10, ../sass/_chat.scss */
+#custom-search-input {
+  background: #e8e6e7 none repeat scroll 0 0;
+  margin: 0;
+  padding: 10px;
+}
+/* line 14, ../sass/_chat.scss */
+#custom-search-input .input-group {
+  width: 100%;
+}
+
+/* line 19, ../sass/_chat.scss */
+#custom-search-input .search-query {
+  background: #fff none repeat scroll 0 0 !important;
+  border-radius: 4px;
+  height: 33px;
+  margin-bottom: 0;
+  padding-left: 7px;
+  padding-right: 7px;
+  width: 100%;
+}
+
+/* line 29, ../sass/_chat.scss */
+#custom-search-input button {
+  background: transparent none repeat scroll 0 0;
+  border: 0 none;
+  border-radius: 3px;
+  color: #666666;
+  left: auto;
+  margin-bottom: 0;
+  margin-top: 7px;
+  padding: 2px 5px;
+  position: absolute;
+  right: 0;
+  z-index: 4;
+}
+
+/* line 43, ../sass/_chat.scss */
+.search-query:focus + button {
+  z-index: 3;
+}
+
+/* line 47, ../sass/_chat.scss */
+.all_conversation button {
+  background: #f5f3f3 none repeat scroll 0 0;
+  border: 1px solid #dddddd;
+  height: 38px;
+  text-align: left;
+  width: 100%;
+}
+
+/* line 55, ../sass/_chat.scss */
+.all_conversation i {
+  background: #e9e7e8 none repeat scroll 0 0;
+  border-radius: 100px;
+  color: #636363;
+  font-size: 17px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  width: 30px;
+}
+
+/* line 66, ../sass/_chat.scss */
+.all_conversation .cacd ret {
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  right: 15px;
+  top: 0;
+}
+
+/* line 74, ../sass/_chat.scss */
+.all_conversation .dropdown-menu {
+  background: #f5f3f3 none repeat scroll 0 0;
+  border-radius: 0;
+  margin-top: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* line 82, ../sass/_chat.scss */
+.all_conversation ul li {
+  border-bottom: 1px solid #dddddd;
+  line-height: normal;
+  width: 100%;
+}
+
+/* line 88, ../sass/_chat.scss */
+.all_conversation ul li a:hover {
+  background: #dddddd none repeat scroll 0 0;
+  color: #333;
+}
+
+/* line 93, ../sass/_chat.scss */
+.all_conversation ul li a {
+  color: #333;
+  line-height: 30px;
+  padding: 3px 20px;
+}
+
+/* line 99, ../sass/_chat.scss */
+.member_list .chat-body {
+  margin-left: 47px;
+  margin-top: 0;
+}
+/* line 102, ../sass/_chat.scss */
+.member_list .chat-body .time {
+  color: #ababab;
+  font-size: 12px;
+}
+
+/* line 108, ../sass/_chat.scss */
+.top_nav {
+  overflow: visible;
+}
+
+/* line 112, ../sass/_chat.scss */
+.member_list .contact_sec {
+  color: #b9bfc1;
+}
+
+/* line 116, ../sass/_chat.scss */
+.member_list li {
+  padding: 10px 6px;
+}
+
+/* line 119, ../sass/_chat.scss */
+.mamber_list li.active {
+  background: gray;
+}
+
+/* line 122, ../sass/_chat.scss */
+.member_list ul {
+  border: 1px solid transparent;
+}
+
+/* line 126, ../sass/_chat.scss */
+.chat-img img {
+  height: 34px;
+  width: 34px;
+}
+
+/* line 131, ../sass/_chat.scss */
+.member_list {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* line 136, ../sass/_chat.scss */
+.sub_menu_ {
+  background: #e8e6e7 none repeat scroll 0 0;
+  left: 100%;
+  max-width: 233px;
+  position: absolute;
+  width: 100%;
+}
+
+/* line 144, ../sass/_chat.scss */
+.sub_menu_ {
+  background: #f5f3f3 none repeat scroll 0 0;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  display: none;
+  left: 100%;
+  margin-left: 0;
+  max-width: 233px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+/* line 156, ../sass/_chat.scss */
+.all_conversation ul li:hover .sub_menu_ {
+  display: block;
+}
+
+/* line 160, ../sass/_chat.scss */
+.new_message_head {
+  background: #f5f3f3 none repeat scroll 0 0;
+  float: left;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px 10px;
+  width: 100%;
+}
+
+/* line 169, ../sass/_chat.scss */
+.new_message_head button {
+  background: transparent none repeat scroll 0 0;
+  border: medium none;
+}
+
+/* line 175, ../sass/_chat.scss */
+.message_section {
+  height: 100%;
+  border: 1px solid #dddddd;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* line 183, ../sass/_chat.scss */
+.chat_area {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  vertical-align: baseline;
+  width: 100%;
+  height: 60vh;
+}
+
+/* line 191, ../sass/_chat.scss */
+.chat_area li {
+  padding: 14px 14px 0;
+}
+
+/* line 195, ../sass/_chat.scss */
+.chat_area li .chat-img1 img {
+  height: 40px;
+  width: 40px;
+}
+
+/* line 200, ../sass/_chat.scss */
+.chat_area .chat-body1 {
+  margin-left: 50px;
+  background: #fbf9fa none repeat scroll 0 0;
+  padding: 10px;
+  max-width: 70%;
+}
+
+/* line 207, ../sass/_chat.scss */
+.chat-body1 .chat_time {
+  opacity: .5;
+}
+
+/* line 211, ../sass/_chat.scss */
+.chat_area .admin_chat .chat-body1 {
+  margin-left: 0;
+  margin-right: 10px;
+  float: right;
+}
+
+/* line 217, ../sass/_chat.scss */
+.chat_area li:last-child {
+  padding-bottom: 10px;
+}
+
+/* line 221, ../sass/_chat.scss */
+.message_write {
+  background: #f5f3f3 none repeat scroll 0 0;
+  padding: 15px;
+  width: 100%;
+}
+
+/* line 227, ../sass/_chat.scss */
+.message_write textarea.form-control {
+  height: 70px;
+  padding: 10px;
+}
+
+/* line 232, ../sass/_chat.scss */
+.chat_bottom {
+  float: left;
+  margin-top: 13px;
+  width: 100%;
+}
+
+/* line 238, ../sass/_chat.scss */
+.upload_btn {
+  color: #777777;
+}
+
+/* line 242, ../sass/_chat.scss */
+.sub_menu_ > li a,
+.sub_menu_ > li {
+  float: left;
+  width: 100%;
+}
+
+/* line 247, ../sass/_chat.scss */
+.member_list li.active {
+  background: #f5f3f3 !important;
+}
+
+/* line 251, ../sass/_chat.scss */
+.member_list li:hover {
+  background: #f5f3f3 none repeat scroll 0 0;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 256, ../sass/_chat.scss */
+  .chat .wrapper {
+    max-width: none;
+    width: 992px;
   }
 }

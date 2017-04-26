@@ -311,6 +311,7 @@ table.pricing{
     .page-content{
         margin-top: 140px;
     }
+    
 }
 @media only screen and (max-width: 480px) {
     .top-bar .nav-tabs{
@@ -322,3 +323,4 @@ table.pricing{
 @import 'internal';
 @import 'feed';
 @import 'profile';
+@import 'chat';

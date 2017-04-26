@@ -47,10 +47,12 @@
         }
     }
     &.static {
-        position: static;
-        background-image: url(../img/back-register.jpg);
+        position: static;        
         background-size:cover;
         background-position: center;
+    }
+    &.static.internal{
+        background-image: url(../img/back-register.jpg);
     }
 }
 
