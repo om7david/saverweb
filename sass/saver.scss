@@ -144,7 +144,7 @@ section.other{
     }
     .card-title{
         margin-top: 0;
-        margin-bottom: 0;
+        margin-bottom: 15px;;
     }
     .card-subtitle{
         margin-top: 10px;
@@ -197,34 +197,29 @@ section.other{
     position: absolute;
     top: 15px;
     right: 15px;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    padding:0;
 }
-.top-bar{
-    position: relative;
-    margin-bottom: 15px;
-    .nav-tabs{
-        position: absolute;
-        top:0;
-        right:0;
-        border-bottom: none;
-        
+
+.nav-tabs{
+    border-bottom: none;
+    display: flex;
+    overflow-x: scroll;
+    li{
+        flex-grow: 1;
+        text-align: center;
     }
-    .nav>li>a{
-        font-size: 1.2em
-    }
-    .nav>li>a:focus, .nav>li>a:hover{
-        border-color:transparent;
-        background:none;
-    }
-    .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
-        border:none;
-        border-bottom: 3px solid $accent;
-    }
-    
 }
+.nav>li>a{
+    font-size: 1.2em
+}
+.nav>li>a:focus, .nav>li>a:hover{
+    border-color:transparent;
+    background:none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    border:none;
+    border-bottom: 5px solid $accent;
+}    
+
 .tab-pane{
     padding: 0 0 15px;
 }

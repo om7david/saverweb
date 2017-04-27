@@ -22,26 +22,27 @@
     <nav class="navbar navbar-inverse">
         <div class="wrapper">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <div class="logo">
                         <img src="img/saver-logo.svg" class="img-responsive">
                     </div>
                 </div>
-                <div class="col-sm-5 col-sm-push-4">
+                <div class="col-sm-5 col-sm-push-5">
                     <div class="navbar-user">
                         <div class="notifications">
                             <a href="#" class="btn btn-link"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
                             <a href="#" class="btn btn-link"><span class="glyphicon glyphicon-comment" aria-hidden="true"></span></a>
                             <a href="#" class="btn btn-link"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span></a>
+                            <div class="dropdown">
+                                <a class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown"><img src="img/user.png" class="profile-img-sm"> Guillermo </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"><i class="fa fa-user"></i> Perfil</a></li>
+                                    <li><a href="#"><i class="fa fa-sign-out"></i> Salir</a></li>
+                                </ul>
+                            </div>
                             <a href="#mobile-nav" class="btn btn-link hamburger" data-toggle="modal" data-target="#mobile-nav"><span class="glyphicon glyphicon-menu-hamburger"></span></a>
                         </div>
-                        <div class="dropdown">
-                            <a class="btn btn-link dropdown-toggle" type="button" data-toggle="dropdown"><img src="img/user.png" class="profile-img-sm">Juan Cevallos<span class="caret"></span></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">Perfil</a></li>
-                                <li><a href="#">Salir</a></li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
                 <div class="col-sm-4 col-sm-pull-5">
@@ -161,10 +162,19 @@
                                 </div>
                             </div>
                         </div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="active"><a href="#tab-servicios" aria-controls="tab-servicios" role="tab" data-toggle="tab">Servicios <span class="badge">3</span></a></li>
+                            <li role="presentation"><a href="#tab-publicaciones" aria-controls="tab-publicaciones" role="tab" data-toggle="tab">Publicaciones <span class="badge">20</span></a></li>
+                            <li role="presentation"><a href="#tab-seguidores" aria-controls="tab-seguidores" role="tab" data-toggle="tab">Seguidores <span class="badge">6</span></a></li>
+                            <li role="presentation"><a href="#tab-siguiendo" aria-controls="tab-siguiendo" role="tab" data-toggle="tab">Siguiendo <span class="badge">8</span></a></li>
+                        </ul>
                     </div>
-                    <div class="card services-list">
-                        <div class="card-content">
+                    <div class="card tab-content">
+                        <div class="card-content tab-pane active" id="tab-servicios">
+
                             <h3 class="card-title">Servicios</h3>
+                            <a href="#" class="btn btn-primary btn-sm btn-float">Agregar Nuevo</a>
+
                             <div class="media service">
                                 <div class="media-left service-image">
                                     <a href="#">
@@ -285,6 +295,279 @@
                                 <!-- Modal -->
                             </div>
                         </div>
+                        <div class="card-content tab-pane" id="tab-publicaciones">
+                            <h3 class="card-title">Publicaciones</h3>
+                            <div class="posts">
+                                <div class="post">
+                                    <div class="card-content">
+                                        <div class="post-header">
+                                            <div class="profile">
+                                                <div class="profile-img">
+
+                                                </div>
+                                            </div>
+                                            <div class="activity">
+                                                <span class="name"><a href="#">Juan Cevallos</a> <span class="activity-type"></span> a posteado una nueva oportunidad de trabajo </span>
+                                            </div>
+                                            <div class="meta">
+                                                <span class="time">Hace 2 horas</span> | <span class="offers-number">20 ofertas</span>
+                                            </div>
+                                        </div>
+                                        <div class="post-description">
+                                            <p>Tu quoque, Brute, fili mi, nihil timor populi, nihil! Phasellus laoreet lorem vel dolor tempus vehicula. Petierunt uti sibi concilium totius Galliae in diem certam indicere. </p>
+                                        </div>
+                                        <div class="post-img">
+                                            <img src="img/acercadesaver.jpg" class="img-responsive">
+                                        </div>
+                                        <div class="post-actions">
+                                            <a href="#"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Compartir</a>
+                                            <a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Ofertar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="post">
+                                    <div class="card-content">
+                                        <div class="post-header">
+                                            <div class="profile">
+                                                <div class="profile-img">
+
+                                                </div>
+                                            </div>
+                                            <div class="activity">
+                                                <span class="name"><a href="#">Juan Cevallos</a> <span class="activity-type"></span> a posteado una nueva oportunidad de trabajo </span>
+                                            </div>
+                                            <div class="meta">
+                                                <span class="time">Hace 2 horas</span> | <span class="offers-number">20 ofertas</span>
+                                            </div>
+                                        </div>
+                                        <div class="post-description">
+                                            <p>Tu quoque, Brute, fili mi, nihil timor populi, nihil! Phasellus laoreet lorem vel dolor tempus vehicula. Petierunt uti sibi concilium totius Galliae in diem certam indicere. </p>
+                                        </div>
+                                        <div class="post-img">
+                                            <img src="img/acercadesaver.jpg" class="img-responsive">
+                                        </div>
+                                        <div class="post-actions">
+                                            <a href="#"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Compartir</a>
+                                            <a href="#"><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Ofertar</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content tab-pane" id="tab-seguidores">
+                            <h3 class="card-title">Seguidores</h3>
+                            <div class="row follower-list">
+                                <div class="col-sm-6">
+                                    <a href="#" class="follower">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="profile">
+                                                    <div class="profile-img">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="name">Pablo Milanes</span>
+                                                <span class="username">@pmilanes</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="follower">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="profile">
+                                                    <div class="profile-img">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="name">Pablo Milanes</span>
+                                                <span class="username">@pmilanes</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="follower">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="profile">
+                                                    <div class="profile-img">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="name">Pablo Milanes</span>
+                                                <span class="username">@pmilanes</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="follower">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="profile">
+                                                    <div class="profile-img">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="name">Pablo Milanes</span>
+                                                <span class="username">@pmilanes</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="follower">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="profile">
+                                                    <div class="profile-img">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="name">Pablo Milanes</span>
+                                                <span class="username">@pmilanes</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="follower">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="profile">
+                                                    <div class="profile-img">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="name">Pablo Milanes</span>
+                                                <span class="username">@pmilanes</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-content tab-pane" id="tab-siguiendo">
+                            <h3 class="card-title">Siguiendo</h3>
+                            <div class="row follower-list">
+                                <div class="col-sm-6">
+                                    <a href="#" class="follower">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="profile">
+                                                    <div class="profile-img">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="name">Pablo Milanes</span>
+                                                <span class="username">@pmilanes</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="follower">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="profile">
+                                                    <div class="profile-img">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="name">Pablo Milanes</span>
+                                                <span class="username">@pmilanes</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="follower">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="profile">
+                                                    <div class="profile-img">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="name">Pablo Milanes</span>
+                                                <span class="username">@pmilanes</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="follower">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="profile">
+                                                    <div class="profile-img">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="name">Pablo Milanes</span>
+                                                <span class="username">@pmilanes</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="follower">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="profile">
+                                                    <div class="profile-img">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="name">Pablo Milanes</span>
+                                                <span class="username">@pmilanes</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="col-sm-6">
+                                    <a href="#" class="follower">
+                                        <div class="media">
+                                            <div class="media-left">
+                                                <div class="profile">
+                                                    <div class="profile-img">
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="media-body">
+                                                <span class="name">Pablo Milanes</span>
+                                                <span class="username">@pmilanes</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -331,42 +614,42 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="edit-group">
-                                                <h4>Personal</h4>
-                                                <a href="#" class="btn btn-link btn-sm">Agregar contacto personal</a>
-                                                <div class="row-input">
-                                                    <select class="form-control">
+                                            <div class="col-sm-12">
+                                                <div class="edit-group">
+                                                    <h4>Personal</h4>
+                                                    <a href="#" class="btn btn-link btn-sm">Agregar contacto personal</a>
+                                                    <div class="row-input">
+                                                        <select class="form-control">
                                                         <option>Teléfono</option>
                                                         <option>Correo Electrónico</option>
                                                         <option>Dirección</option>
                                                     </select>
-                                                    <input type="text" class="form-control" placeholder="">
-                                                </div>
-                                                <div class="row-input">
-                                                    <select class="form-control">
+                                                        <input type="text" class="form-control" placeholder="">
+                                                    </div>
+                                                    <div class="row-input">
+                                                        <select class="form-control">
                                                         <option>Teléfono</option>
                                                         <option>Correo Electrónico</option>
                                                         <option>Dirección</option>
                                                     </select>
-                                                    <input type="text" class="form-control" placeholder="">
+                                                        <input type="text" class="form-control" placeholder="">
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="edit-group">
-                                                <h4>Redes sociales</h4>
-                                                <a href="#" class="btn btn-link btn-sm">Agregar red social</a>
-                                                <div class="row-input">
-                                                    <select class="form-control">
+                                                <div class="edit-group">
+                                                    <h4>Redes sociales</h4>
+                                                    <a href="#" class="btn btn-link btn-sm">Agregar red social</a>
+                                                    <div class="row-input">
+                                                        <select class="form-control">
                                                         <option>Facebook</option>
                                                         <option>Instagram</option>
                                                         <option>LinkedIn</option>
                                                         <option>Twitter</option>
                                                     </select>
-                                                    <input type="text" class="form-control" placeholder="URL">
+                                                        <input type="text" class="form-control" placeholder="URL">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>

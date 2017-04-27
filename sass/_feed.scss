@@ -1,7 +1,7 @@
-.feed {    
+.feed {
     .sidebar-left {
-        h4{
-          margin-bottom: 0;  
+        h4 {
+            margin-bottom: 0;
         }
         .card-footer {
             padding: 10px;
@@ -33,96 +33,102 @@
             }
         }
     }
-    .posts {
-        .post {
-            margin-bottom: 15px;
-        }
-        .post-header {
-            .profile {
-                text-align: left;
-                margin-botom: 0px;
-            }
-            .profile-img {
-                text-align: left;
-                background-size: cover;
-                width: 50px;
-                height: 50px;
-                margin-left: 0;
-                margin-right: 10px;
-                float: left;
-                border-radius: 3px;
-                border: 1px solid $light;
-            }
-            .meta {
-                opacity: .3;
-            }
-            
-        }
-        .post-description {
-            clear: both;
-            margin: 25px 0 10px;
-            ;
-        }
-        .post-img {
-            max-height: 250px;
-            overflow: hidden;
-            margin-bottom: 10px;
-        }
-        .post-actions {
-            text-align: right;
-            font-size: 16px;
-            a {
-                display: inline-block;
-                padding: 10px 5px;
-                margin-left: 15px;
-            }
-        }
-    }
-    .new-post{
-        .profile-img{
+    .new-post {
+        .profile-img {
             width: 50px;
             height: 50px;
         }
-        textarea{
+        textarea {
             margin-bottom: 10px;
         }
-        a{
+        a {
             font-size: 22px;
         }
     }
-    .sidebar-right{
-        .btn-float-right{
+    .sidebar-right {
+        .btn-float-right {
             position: absolute;
-            top: 10px; 
+            top: 10px;
             right: 25px;
         }
-        .img-list{
+        .img-list {
             list-style-type: none;
-            margin:0;
+            margin: 0;
             padding: 0;
-            .img-list-item{
+            .img-list-item {
                 margin-bottom: 10px;
                 display: inline-block;
                 overflow: hidden;
                 text-overflow: ellipsis
             }
-            img{
-                float:left;
+            img {
+                float: left;
                 width: 20%;
                 height: auto;
                 margin-right: 5%;
             }
-            span{
-                float:left;
+            span {
+                float: left;
                 width: 75%;
-                height: 40px;                
+                height: 40px;
             }
         }
     }
 }
+
+.posts {
+    .post {
+        margin-bottom: 15px;
+        border: 1px solid #DCDCDC;
+        border-radius: 3px;
+    }
+    .post-header {
+        .profile {
+            text-align: left;
+            margin-botom: 0px;
+        }
+        .profile-img {
+            text-align: left;
+            background-size: cover;
+            width: 50px;
+            height: 50px;
+            margin-left: 0;
+            margin-right: 10px;
+            float: left;
+            border-radius: 50%;
+            border: 1px solid $light;
+        }
+        .meta {
+            opacity: .3;
+        }
+    }
+    .post-description {
+        clear: both;
+        margin: 25px 0 10px;
+        ;
+    }
+    .post-img {
+        max-height: 250px;
+        overflow: hidden;
+        text-align: center;
+        img{
+            margin: 0 auto;
+        }
+    }
+    .post-actions {
+        text-align: right;
+        font-size: 16px;
+        a {
+            display: inline-block;
+            padding: 10px 5px;
+            margin-left: 15px;
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .sidebar-left,
-    .sidebar-right{
+    .sidebar-right {
         display: none;
     }
 }
