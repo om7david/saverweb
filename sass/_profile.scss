@@ -17,6 +17,7 @@
 }
 .service{
     position: relative;
+    
     .service-description{
         position: relative;
     }
@@ -80,5 +81,10 @@
     .service .rating{
         position: static;
         text-align: left;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .service-image img {
+        width: 50px;
     }
 }

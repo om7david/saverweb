@@ -870,33 +870,33 @@ table.pricing .glyphicon {
 .service {
   position: relative;
 }
-/* line 20, ../sass/_profile.scss */
+/* line 21, ../sass/_profile.scss */
 .service .service-description {
   position: relative;
 }
-/* line 23, ../sass/_profile.scss */
+/* line 24, ../sass/_profile.scss */
 .service .rating {
   position: absolute;
   top: 0;
   right: 0;
   padding: 0;
 }
-/* line 29, ../sass/_profile.scss */
+/* line 30, ../sass/_profile.scss */
 .service .rating span {
   font-size: 1em;
   margin: 0;
 }
-/* line 35, ../sass/_profile.scss */
+/* line 36, ../sass/_profile.scss */
 .service .price {
   padding-left: 20px;
 }
-/* line 38, ../sass/_profile.scss */
+/* line 39, ../sass/_profile.scss */
 .service .btn-float {
   top: 0;
   right: 0;
 }
 
-/* line 43, ../sass/_profile.scss */
+/* line 44, ../sass/_profile.scss */
 .edit-img {
   font-size: 1.8em;
   position: absolute;
@@ -904,48 +904,54 @@ table.pricing .glyphicon {
   bottom: 0px;
 }
 
-/* line 49, ../sass/_profile.scss */
+/* line 50, ../sass/_profile.scss */
 .edit-group {
   position: relative;
 }
-/* line 51, ../sass/_profile.scss */
+/* line 52, ../sass/_profile.scss */
 .edit-group .btn-sm {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-/* line 57, ../sass/_profile.scss */
+/* line 58, ../sass/_profile.scss */
 .follower-list {
   margin: 25px 0;
 }
 
-/* line 60, ../sass/_profile.scss */
+/* line 61, ../sass/_profile.scss */
 .follower {
   padding: 10px 0;
   margin-bottom: 15px;
   display: block;
 }
-/* line 64, ../sass/_profile.scss */
+/* line 65, ../sass/_profile.scss */
 .follower .profile-img {
   width: 50px;
   height: 50px;
 }
-/* line 68, ../sass/_profile.scss */
+/* line 69, ../sass/_profile.scss */
 .follower span {
   display: block;
 }
-/* line 71, ../sass/_profile.scss */
+/* line 72, ../sass/_profile.scss */
 .follower .name {
   font-size: 18px;
   color: #333;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 80, ../sass/_profile.scss */
+  /* line 81, ../sass/_profile.scss */
   .service .rating {
     position: static;
     text-align: left;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 87, ../sass/_profile.scss */
+  .service-image img {
+    width: 50px;
   }
 }
 /* line 1, ../sass/_chat.scss */
