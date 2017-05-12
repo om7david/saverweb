@@ -234,75 +234,81 @@ section.other {
 }
 
 /* line 199, ../sass/saver.scss */
+.img-sm {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 203, ../sass/saver.scss */
 .btn-float {
   position: absolute;
   top: 15px;
   right: 15px;
 }
 
-/* line 205, ../sass/saver.scss */
+/* line 209, ../sass/saver.scss */
 .nav-tabs {
   border-bottom: none;
   display: flex;
   overflow-x: scroll;
 }
-/* line 209, ../sass/saver.scss */
+/* line 213, ../sass/saver.scss */
 .nav-tabs li {
   flex-grow: 1;
   text-align: center;
 }
 
-/* line 214, ../sass/saver.scss */
+/* line 218, ../sass/saver.scss */
 .nav > li > a {
   font-size: 1.2em;
 }
 
-/* line 217, ../sass/saver.scss */
+/* line 221, ../sass/saver.scss */
 .nav > li > a:focus, .nav > li > a:hover {
   border-color: transparent;
   background: none;
 }
 
-/* line 221, ../sass/saver.scss */
+/* line 225, ../sass/saver.scss */
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
   border: none;
   border-bottom: 5px solid #6AB8D7;
 }
 
-/* line 226, ../sass/saver.scss */
+/* line 230, ../sass/saver.scss */
 .tab-pane {
   padding: 0 0 15px;
 }
 
-/* line 229, ../sass/saver.scss */
+/* line 233, ../sass/saver.scss */
 .header .card {
   margin-top: 100px;
   margin-bottom: 75px;
 }
 
-/* line 234, ../sass/saver.scss */
+/* line 238, ../sass/saver.scss */
 .text-tiny {
   font-size: 0.8em;
 }
 
-/* line 238, ../sass/saver.scss */
+/* line 242, ../sass/saver.scss */
 .form.horizontal {
   display: flex;
 }
-/* line 240, ../sass/saver.scss */
+/* line 244, ../sass/saver.scss */
 .form.horizontal .form-input {
   margin-left: 10px;
 }
-/* line 243, ../sass/saver.scss */
+/* line 247, ../sass/saver.scss */
 .form.horizontal input {
   display: block;
 }
-/* line 246, ../sass/saver.scss */
+/* line 250, ../sass/saver.scss */
 .form.horizontal input[type=submit] {
   display: inline-block;
 }
 
-/* line 251, ../sass/saver.scss */
+/* line 255, ../sass/saver.scss */
 footer {
   background: #333;
   text-align: center;
@@ -310,7 +316,7 @@ footer {
   width: 100%;
   color: #fff;
 }
-/* line 257, ../sass/saver.scss */
+/* line 261, ../sass/saver.scss */
 footer a {
   display: inline-block;
   padding: 5px 15px;
@@ -318,18 +324,18 @@ footer a {
   opacity: .8;
   font-size: .8em;
 }
-/* line 263, ../sass/saver.scss */
+/* line 267, ../sass/saver.scss */
 footer a:hover {
   opacity: 1;
 }
 
-/* line 269, ../sass/saver.scss */
+/* line 273, ../sass/saver.scss */
 .footer-home {
   position: absolute;
   bottom: 0;
 }
 
-/* line 274, ../sass/saver.scss */
+/* line 278, ../sass/saver.scss */
 table.pricing th {
   background: #6AB8D7;
   color: #fff;
@@ -338,48 +344,48 @@ table.pricing th {
   font-size: 1.5em;
   font-weight: 400;
 }
-/* line 282, ../sass/saver.scss */
+/* line 286, ../sass/saver.scss */
 table.pricing .blank {
   background-color: transparent !important;
   border-top: 0;
 }
-/* line 286, ../sass/saver.scss */
+/* line 290, ../sass/saver.scss */
 table.pricing th.gray {
   background: #959494;
 }
-/* line 289, ../sass/saver.scss */
+/* line 293, ../sass/saver.scss */
 table.pricing td {
   height: 80px;
   vertical-align: middle !important;
 }
-/* line 293, ../sass/saver.scss */
+/* line 297, ../sass/saver.scss */
 table.pricing td.benefit {
   text-align: left;
 }
-/* line 296, ../sass/saver.scss */
+/* line 300, ../sass/saver.scss */
 table.pricing .glyphicon {
   font-size: 30px;
   color: #80b926;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 302, ../sass/saver.scss */
+  /* line 306, ../sass/saver.scss */
   .header {
     display: block;
     height: auto;
   }
-  /* line 305, ../sass/saver.scss */
+  /* line 309, ../sass/saver.scss */
   .header .card {
     margin-top: 15px;
   }
 
-  /* line 309, ../sass/saver.scss */
+  /* line 313, ../sass/saver.scss */
   .page-content {
     margin-top: 140px;
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 315, ../sass/saver.scss */
+  /* line 319, ../sass/saver.scss */
   .top-bar .nav-tabs {
     position: static;
   }
@@ -696,6 +702,12 @@ table.pricing .glyphicon {
 .service-box .material-icons {
   font-size: 120px;
   color: #6AB8D7;
+}
+
+/* line 29, ../sass/_internal.scss */
+.notification {
+  border-bottom: 1px solid #F8F8F8;
+  padding-bottom: 5px;
 }
 
 /* line 3, ../sass/_feed.scss */
