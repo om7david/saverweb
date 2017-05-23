@@ -105,10 +105,10 @@ section.other{
 .btn-secondary {
     background-color: #fff;
     opacity: .8;
-    color: $accent;
+    color: $accent !important;
     border-color: #fff;
     &:hover {
-        color: $accent;
+        color: $accent !important;
         opacity: 1;
     }
 }

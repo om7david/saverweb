@@ -174,7 +174,6 @@
 
 .message_section {
     height: 100%;
-    border: 1px solid #dddddd;
     display:flex;
     flex-direction: column;
     flex-grow: 1;
@@ -253,8 +252,13 @@
     cursor: pointer;
 }
 @media only screen and (max-width: 768px){
-    .chat .wrapper{
-        max-width: none;
-        width: 992px;
+    .member_list .chat-body{
+        display:none;
+    }
+    .chat_area .chat-body1{
+        max-width: 80%;
+    }
+    #custom-search-input{
+        display: none;
     }
 }
